@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 html.dark {
     --text-color: #fff;
     --icon-color: brightness(0) saturate(100%) invert(99%) sepia(100%)
@@ -14,4 +16,12 @@ html.dark {
     --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
     --dropdown-arrow-color: brightness(0) saturate(100%) invert(17%) sepia(11%)
         saturate(1097%) hue-rotate(185deg) brightness(99%) contrast(89%);
+    --top-menu-border-color: #171c28;
+    --menu-column-icon-color: brightness(0) saturate(100%) invert(94%)
+        sepia(74%) saturate(506%) hue-rotate(173deg) brightness(110%)
+        contrast(94%);
+
+    @include abstracts.breakpoint(lg) {
+        --header-shadow-color: rgba(0, 0, 0, 0.2);
+    }
 }
