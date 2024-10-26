@@ -21,6 +21,9 @@ html.dark {
         sepia(74%) saturate(506%) hue-rotate(173deg) brightness(110%)
         contrast(94%);
 
+    // Sidebar
+    --sidebar-bg: #292e39;
+
     @include abstracts.breakpoint(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.2);
     }

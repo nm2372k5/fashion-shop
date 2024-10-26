@@ -1,11 +1,19 @@
+@use "../abstracts";
+
 .dropdown {
     position: absolute;
     left: 0;
-    padding-top: 50px;
-    width: min(1240px, 100%);
+    padding-top: 54px;
+    width: min(1140px, 100%);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.25s, visibility 0.25s;
+    transition: opacity 0.5s, visibility 0.5s;
+
+    @include abstracts.breakpoint(lg) {
+        position: initial;
+        display: none;
+        padding-top: 0;
+    }
 
     &__inner {
         --inner-padding: 30px;
@@ -17,6 +25,10 @@
         background: var(--dropdown-bg-color);
         box-shadow: 0px 40px 90px 20px var(--dropdown-shadow-color);
 
+        @include abstracts.breakpoint(lg) {
+            padding: 0 var(--inner-padding);
+        }
+
         &::before {
             content: url("../icons/dropdown-arrow.svg");
             position: absolute;
@@ -25,19 +37,50 @@
             translate: -50%;
             filter: var(--dropdown-arrow-color);
         }
+
+        @include abstracts.breakpoint(lg) {
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+
+            &::before {
+                content: none;
+            }
+        }
     }
 }
 
 .top-menu {
     display: flex;
-    overflow-y: auto;
+    overflow-y: scroll;
+
+    @include abstracts.breakpoint(lg) {
+        flex-direction: column;
+        overflow-y: initial;
+    }
+
     &__group {
-        margin-left: 30px;
+        padding-left: 30px;
         width: 200px;
-        max-height: calc(
-            min(582px, calc(100vh - 158px)) - var(--inner-padding) * 2
-        );
+        //
+        // max-height: calc(
+        //     min(582px, calc(100vh - 158px)) - var(--inner-padding) * 2
+        // );
+        max-height: 0;
+        transition: max-height 0.75s;
         border-right: 1px solid var(--top-menu-border-color);
+
+        @include abstracts.breakpoint(lg) {
+            width: 100%;
+            height: auto;
+            border-right: none;
+
+            padding: 10px;
+        }
+    }
+
+    &__group:last-child {
+        border-right: none;
     }
 }
 
@@ -51,6 +94,14 @@
         flex-shrink: 0;
         width: 36px;
         height: 36px;
+
+        @include abstracts.breakpoint(xl) {
+            display: none;
+        }
+
+        @include abstracts.breakpoint(lg) {
+            display: block;
+        }
     }
 
     &__content {
