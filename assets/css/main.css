@@ -1765,6 +1765,11 @@ html.dark {
   width: 100%;
   padding-top: 34%;
 }
+@media (max-width: 575.98px) {
+  .slideshow__item {
+    padding-top: 53.5%;
+  }
+}
 .slideshow__img {
   position: absolute;
   top: 0;
