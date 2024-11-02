@@ -7,6 +7,8 @@ html.dark {
 
     --body-bg-color: #292e39;
     --header-bg-color: #171c28;
+    --footer-text-color: #9d9da6;
+
     --top-act-group-bg-color: #292e39;
     --top-act-group-shadow: rgba(0, 0, 0, 0.2);
     --top-act-separate: #ededf6; // Co the bo
@@ -24,7 +26,28 @@ html.dark {
     // Sidebar
     --sidebar-bg: #292e39;
 
-    @include abstracts.breakpoint(lg) {
+    // Category item
+    --cate-item-bg: #171c28;
+    --cate-item-thumb-bg: #292e39;
+    --cate-item-title-color: #fff;
+
+    // Butons
+    --filter-btn-text-color: #fff;
+    --filter-btn-bg-color: #171c28;
+
+    // Product card
+    --product-card-bg-color: #171c28;
+    --product-card-shadow: rgba(0, 0, 0, 0.2);
+
+    // Filter
+    --filter-form-bg-color: #2f3441;
+    --filter-form-shadow: rgba(0, 0, 0, 0.4);
+    --filter-form-tag-bg-color: #171c28;
+    --filter-form-arrow-color: brightness(0) saturate(100%) invert(22%)
+        sepia(13%) saturate(678%) hue-rotate(186deg) brightness(92%)
+        contrast(101%);
+
+    @include abstracts.screen(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.2);
     }
 }

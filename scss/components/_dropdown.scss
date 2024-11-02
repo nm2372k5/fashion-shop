@@ -9,7 +9,7 @@
     visibility: hidden;
     transition: opacity 0.5s, visibility 0.5s;
 
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         position: initial;
         display: none;
         padding-top: 0;
@@ -25,7 +25,7 @@
         background: var(--dropdown-bg-color);
         box-shadow: 0px 40px 90px 20px var(--dropdown-shadow-color);
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             padding: 0 var(--inner-padding);
         }
 
@@ -38,7 +38,7 @@
             filter: var(--dropdown-arrow-color);
         }
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             border-radius: 0;
             background: transparent;
             box-shadow: none;
@@ -54,7 +54,7 @@
     display: flex;
     overflow-y: scroll;
 
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         flex-direction: column;
         overflow-y: initial;
     }
@@ -67,10 +67,11 @@
         //     min(582px, calc(100vh - 158px)) - var(--inner-padding) * 2
         // );
         max-height: 0;
-        transition: max-height 0.75s;
+        transition: max-height .75s;
+
         border-right: 1px solid var(--top-menu-border-color);
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             width: 100%;
             height: auto;
             border-right: none;
@@ -95,11 +96,11 @@
         width: 36px;
         height: 36px;
 
-        @include abstracts.breakpoint(xl) {
+        @include abstracts.screen(xl) {
             display: none;
         }
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             display: block;
         }
     }

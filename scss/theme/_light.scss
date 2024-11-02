@@ -7,6 +7,8 @@ html {
 
     --body-bg-color: #f6f6f6;
     --header-bg-color: #eee;
+    --footer-bg-color: var(--header-bg-color);
+
     --top-act-group-bg-color: #fff;
     --top-act-group-shadow: rgba(237, 237, 246, 0.2);
     --top-act-separate: #ededf6;
@@ -19,8 +21,30 @@ html {
     // Sidebar
     --sidebar-bg: #fff;
 
-    @include abstracts.breakpoint(lg) {
+    // Category item
+    --cate-item-bg: #eee;
+    --cate-item-thumb-bg: #fff;
+    --cate-item-title-color: #000;
+
+    // Butons
+    --filter-btn-text-color: #6c6c72;
+    --filter-btn-bg-color: #fff;
+
+    // Product card
+    --product-card-bg-color: #fff;
+    --product-card-shadow: rgba(237, 237, 246, 0.2);
+
+    // Filter
+    --filter-form-bg-color: #fff;
+    --filter-form-shadow: rgba(200, 200, 200, 0.4);
+    --filter-form-tag-bg-color: #f8f8fb;
+
+    @include abstracts.screen(lg) {
         --header-bg-color: #fff;
         --header-shadow-color: rgba(237, 237, 246, 0.2);
+    }
+    // Cate-item-bg-md
+    @include abstracts.screen(md) {
+        --cate-item-bg: #fff;
     }
 }

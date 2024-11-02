@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fashion Shop</title>
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/png"
+            href="./assets/favicon/favicon-48x48.png"
+            sizes="48x48"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="./assets/favicon/favicon.svg"
+        />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <!-- MAIN -->
+        <main class="container">
+            <section class="product__container">
+                <div class="product__row">
+                    <h2 class="product__heading">Tất cả sản phẩm</h2>
+                    <div class="filter-wrap">
+                        <button
+                            class="filter-btn js-toggle"
+                            toggle-target="#product-filter"
+                        >
+                            Bộ lọc
+                            <img
+                                src="./assets/icons/filter.svg"
+                                alt=""
+                                class="filter-btn__icon icon"
+                            />
+                        </button>
+
+                        <div id="product-filter" class="filter hide">
+                            <img
+                                src="./assets/icons/arrow-up.png"
+                                alt=""
+                                class="filter__arrow d-sm-none"
+                            />
+                            <h3 class="filter__heading">Lọc sản phẩm</h3>
+                            <form action="" class="filter__form">
+                                <div class="filter__row filter__content">
+                                    <!-- Filter column 1 -->
+                                    <div class="filter__col">
+                                        <label for="" class="filter__form-label"
+                                            >Mức giá</label
+                                        >
+                                        <div class="filter__form-group">
+                                            <div
+                                                class="filter__form-slider"
+                                                style="
+                                                    --min-value: 10%;
+                                                    --max-value: 60%;
+                                                "
+                                            ></div>
+                                        </div>
+                                        <div
+                                            class="filter__form-group filter__form-group--inline"
+                                        >
+                                            <div>
+                                                <label
+                                                    for=""
+                                                    class="filter__form-label filter__form-label--small"
+                                                >
+                                                    Giá từ
+                                                </label>
+                                                <input
+                                                    type="text"
+                                                    name=""
+                                                    id=""
+                                                    value="$30.00"
+                                                    class="filter__form-input"
+                                                />
+                                            </div>
+                                            <div>
+                                                <label
+                                                    for=""
+                                                    class="filter__form-label filter__form-label--small"
+                                                >
+                                                    đến
+                                                </label>
+                                                <input
+                                                    type="text"
+                                                    name=""
+                                                    id=""
+                                                    value="$100.00"
+                                                    class="filter__form-input"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__separate"></div>
+
+                                    <!-- Filter column 2 -->
+                                    <div class="filter__col">
+                                        <label
+                                            for="product-select"
+                                            class="filter__form-label"
+                                        >
+                                            Danh mục sản phẩm
+                                        </label>
+                                        <div
+                                            class="filter__form-group filter__form-group--inline"
+                                        >
+                                            <select
+                                                name=""
+                                                id="product-select"
+                                                class="filter__form-select"
+                                            >
+                                                <option
+                                                    class="filter__form-option"
+                                                    value="1"
+                                                >
+                                                    Dolce & Gabbana
+                                                </option>
+                                                <option
+                                                    class="filter__form-option"
+                                                    value="2"
+                                                >
+                                                    Louis Vuitton
+                                                </option>
+                                                <option
+                                                    class="filter__form-option"
+                                                    value="3"
+                                                >
+                                                    Gucci
+                                                </option>
+                                                <option
+                                                    class="filter__form-option"
+                                                    value="4"
+                                                >
+                                                    Chanel
+                                                </option>
+                                                <option
+                                                    class="filter__form-option"
+                                                    value="5"
+                                                >
+                                                    Coach
+                                                </option>
+                                                <option
+                                                    class="filter__form-option"
+                                                    value="6"
+                                                >
+                                                    Fendi
+                                                </option>
+                                            </select>
+                                            <select
+                                                name=""
+                                                id="product-select"
+                                                class="filter__form-select"
+                                            >
+                                                <option
+                                                    class="filter__form-option"
+                                                    value="1"
+                                                >
+                                                    Áo
+                                                </option>
+                                                <option
+                                                    class="filter__form-option"
+                                                    value="2"
+                                                >
+                                                    Quần
+                                                </option>
+                                                <option
+                                                    class="filter__form-option"
+                                                    value="3"
+                                                >
+                                                    Váy-đầm
+                                                </option>
+                                                <option
+                                                    class="filter__form-option"
+                                                    value="4"
+                                                >
+                                                    Đồng hồ
+                                                </option>
+                                                <option
+                                                    class="filter__form-option"
+                                                    value="5"
+                                                >
+                                                    Giày
+                                                </option>
+                                                <option
+                                                    class="filter__form-option"
+                                                    value="6"
+                                                >
+                                                    Túi
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="filter__form-group">
+                                            <div class="filter__form-tags">
+                                                <button
+                                                    class="filter__form-tag"
+                                                >
+                                                    Louis Vuitton
+                                                </button>
+                                                <button
+                                                    class="filter__form-tag"
+                                                >
+                                                    Coach
+                                                </button>
+                                                <button
+                                                    class="filter__form-tag"
+                                                >
+                                                    Fendi
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter__row filter__footer">
+                                    <button
+                                        class="btn btn--text filter__cancel js-toggle"
+                                        toggle-target="#product-filter"
+                                    >
+                                        Quay lại
+                                    </button>
+                                    <button
+                                        class="btn btn--primary filter__search js-toggle"
+                                        toggle-target="#product-filter"
+                                    >
+                                        Xem kết quả
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-cols-4 row-cols-lg-2 row-cols-sm-1 g-3">
+                    <!-- Product card 1 -->
+                    <div class="col">
+                        <article class="product-card">
+                            <div class="product-card__img-wrap">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product/item-1.png"
+                                        alt=""
+                                        class="product-card__thumb"
+                                    />
+                                </a>
+                                <button
+                                    class="like-btn like-btn--liked product-card__like-btn"
+                                >
+                                    <img
+                                        src="./assets/icons/heart.svg"
+                                        alt=""
+                                        class="like-btn__icon icon"
+                                    />
+                                    <img
+                                        src="./assets/icons/heart-red.svg"
+                                        alt=""
+                                        class="like-btn__icon--liked"
+                                    />
+                                </button>
+                            </div>
+                            <h3 class="product-card__title">
+                                <a href="#!">
+                                    Áo Khoác Mặc 2 Mặt Chất Kaki Gió 2 Lớp Cao
+                                    Cấp
+                                </a>
+                            </h3>
+                            <p class="product-card__brand">Fashion shop</p>
+                            <div class="product-card__row">
+                                <span class="product-card__price">$47.00</span>
+                                <img
+                                    src="./assets/icons/star.svg"
+                                    alt=""
+                                    class="product-card__star"
+                                />
+                                <span class="product-card__score">4.3</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product card 2 -->
+                    <div class="col">
+                        <article class="product-card">
+                            <div class="product-card__img-wrap">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product/item-2.png"
+                                        alt=""
+                                        class="product-card__thumb"
+                                    />
+                                </a>
+                                <button class="like-btn product-card__like-btn">
+                                    <img
+                                        src="./assets/icons/heart.svg"
+                                        alt=""
+                                        class="like-btn__icon icon"
+                                    />
+                                    <img
+                                        src="./assets/icons/heart-red.svg"
+                                        alt=""
+                                        class="like-btn__icon--liked"
+                                    />
+                                </button>
+                            </div>
+                            <h3 class="product-card__title">
+                                <a href="#!">
+                                    Đầm ngắn Lovito hoa nhí cho chữ a nữ
+                                    L65ED128
+                                </a>
+                            </h3>
+                            <p class="product-card__brand">Lovito</p>
+                            <div class="product-card__row">
+                                <span class="product-card__price">$53.00</span>
+                                <img
+                                    src="./assets/icons/star.svg"
+                                    alt=""
+                                    class="product-card__star"
+                                />
+                                <span class="product-card__score">3.4</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product card 3 -->
+                    <div class="col">
+                        <article class="product-card">
+                            <div class="product-card__img-wrap">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product/item-3.png"
+                                        alt=""
+                                        class="product-card__thumb"
+                                    />
+                                </a>
+                                <button
+                                    class="like-btn like-btn--liked product-card__like-btn"
+                                >
+                                    <img
+                                        src="./assets/icons/heart.svg"
+                                        alt=""
+                                        class="like-btn__icon icon"
+                                    />
+                                    <img
+                                        src="./assets/icons/heart-red.svg"
+                                        alt=""
+                                        class="like-btn__icon--liked"
+                                    />
+                                </button>
+                            </div>
+                            <h3 class="product-card__title">
+                                <a href="#!">
+                                    Đầm Lovito họa tiết hoa nhí phong cách
+                                    thường ngày dành cho nữ LNA59243
+                                </a>
+                            </h3>
+                            <p class="product-card__brand">Lovito</p>
+                            <div class="product-card__row">
+                                <span class="product-card__price">$99.99</span>
+                                <img
+                                    src="./assets/icons/star.svg"
+                                    alt=""
+                                    class="product-card__star"
+                                />
+                                <span class="product-card__score">5.0</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product card 4 -->
+                    <div class="col">
+                        <article class="product-card">
+                            <div class="product-card__img-wrap">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/product/item-4.png"
+                                        alt=""
+                                        class="product-card__thumb"
+                                    />
+                                </a>
+                                <button
+                                    class="like-btn like-btn--liked product-card__like-btn"
+                                >
+                                    <img
+                                        src="./assets/icons/heart.svg"
+                                        alt=""
+                                        class="like-btn__icon icon"
+                                    />
+                                    <img
+                                        src="./assets/icons/heart-red.svg"
+                                        alt=""
+                                        class="like-btn__icon--liked"
+                                    />
+                                </button>
+                            </div>
+                            <h3 class="product-card__title">
+                                <a href="#!">
+                                    Giày Thể Thao Nữ Aruki Dáng Basic Phối Màu
+                                    Cá Tính Năng Động - A11
+                                </a>
+                            </h3>
+                            <p class="product-card__brand">Aruki</p>
+                            <div class="product-card__row">
+                                <span class="product-card__price">$38.65</span>
+                                <img
+                                    src="./assets/icons/star.svg"
+                                    alt=""
+                                    class="product-card__star"
+                                />
+                                <span class="product-card__score">4.4</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+    </body>
+</html>

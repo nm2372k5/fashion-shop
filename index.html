@@ -28,6 +28,13 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/main.css" />
 
@@ -40,41 +47,115 @@
         <script>
             load("#header", "./templates/header.html");
         </script>
-        <div class="container">
-            <!-- Slideshow -->
-            <div class="slideshow">
-                <div class="slideshow__inner">
-                    <div class="slideshow__item">
-                        <a href="" class="slideshow__link">
-                            <picture>
-                                <source
-                                    media="(max-width: 575.98px)"
-                                    srcset="
-                                        ./assets/img/slideshow/item-1-sm.png
-                                    "
-                                />
-                                <img
-                                    src="./assets/img/slideshow/item-1.png"
-                                    alt=""
-                                    class="slideshow__img"
-                                />
-                            </picture>
-                        </a>
-                    </div>
-                </div>
 
-                <div class="slideshow__page">
-                    <span class="slideshow__num">1</span>
-                    <span class="slideshow__slider"></span>
-                    <span class="slideshow__num">5</span>
+        <!-- MAIN -->
+        <main class="container home">
+            <!-- Slideshow -->
+            <div class="home__container">
+                <div class="slideshow">
+                    <div class="slideshow__inner">
+                        <div class="slideshow__item">
+                            <a href="" class="slideshow__link">
+                                <picture>
+                                    <source
+                                        media="(max-width: 575.98px)"
+                                        srcset="
+                                            ./assets/img/slideshow/item-1-sm.png
+                                        "
+                                    />
+                                    <img
+                                        src="./assets/img/slideshow/item-1.png"
+                                        alt=""
+                                        class="slideshow__img"
+                                    />
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="slideshow__page">
+                        <span class="slideshow__num">1</span>
+                        <span class="slideshow__slider"></span>
+                        <span class="slideshow__num">5</span>
+                    </div>
                 </div>
             </div>
 
-            <!-- Footer -->
-            <footer id="footer"></footer>
-            <script>
-                load("#footer", "./templates/footer.html");
-            </script>
-        </div>
+            <!-- Browser categories -->
+            <section class="home__container">
+                <h2 class="home__heading">Danh mục nổi bật</h2>
+                <div class="home__cate row row-cols-3 row-cols-md-1">
+                    <!-- Category item 1 -->
+                    <div class="col">
+                        <a href="#!">
+                            <article class="cate-item">
+                                <img
+                                    src="./assets/img/category-item/item-1.png"
+                                    alt=""
+                                    class="cate-item__thumb"
+                                />
+                                <div class="cate-item__info">
+                                    <h3 class="cate-item__title">Áo thun</h3>
+                                    <p class="cate-item__desc">
+                                        Áo thun 3158 chất cotton dày dặn, form
+                                        rộng
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Category item 2 -->
+                    <div class="col">
+                        <a href="#!">
+                            <article class="cate-item">
+                                <img
+                                    src="./assets/img/category-item/item-2.png"
+                                    alt=""
+                                    class="cate-item__thumb"
+                                />
+                                <div class="cate-item__info">
+                                    <h3 class="cate-item__title">
+                                        Quần ống rộng
+                                    </h3>
+                                    <p class="cate-item__desc">
+                                        Quần Ống Rộng FKZ Unisex Chất Tổ Ong
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Category item 3 -->
+                    <div class="col">
+                        <a href="#!"
+                            ><article class="cate-item">
+                                <img
+                                    src="./assets/img/category-item/item-3.png"
+                                    alt=""
+                                    class="cate-item__thumb"
+                                />
+                                <div class="cate-item__info">
+                                    <h3 class="cate-item__title">Áo khoác</h3>
+                                    <p class="cate-item__desc">
+                                        Áo Khoác Thể Thao Tay Dài Màu Trơn cho
+                                        nam và nữ
+                                    </p>
+                                </div>
+                            </article></a
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <!-- Browser products -->
+            <div class="home__container"></div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
     </body>
 </html>
