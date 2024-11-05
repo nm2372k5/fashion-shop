@@ -47,6 +47,15 @@ html.dark {
         sepia(13%) saturate(678%) hue-rotate(186deg) brightness(92%)
         contrast(101%);
 
+    // Auth
+    --auth-content-bg-color: #292e39;
+    --auth-intro-bg-color: #171c28;
+    --auth-intro-text-color: #b9babe;
+    --auth-heading-color: #b9babe;
+
+    // Form
+    --form-placeholder-color: #b9babe;
+
     @include abstracts.screen(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.2);
     }

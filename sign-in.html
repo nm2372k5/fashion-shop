@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sign in Fashion Shop</title>
+        <title>Sign in | Fashion Shop</title>
 
         <!-- Favicon -->
         <link
@@ -28,6 +28,13 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/main.css" />
 
@@ -35,19 +42,120 @@
         <script src="./assets/js/scripts.js"></script>
     </head>
     <body>
-        <!-- Header -->
-        <header id="header"></header>
-        <script>
-            load("#header", "./templates/header.html");
-        </script>
+        <main class="auth">
+            <!-- Auth intro -->
+            <div class="auth__intro d-md-none">
+                <img
+                    src="./assets/img/auth/item-1.svg"
+                    alt=""
+                    class="auth__intro-img"
+                />
+                <p class="auth__intro-text">
+                    The best of luxury brand values, high quality products, and
+                    innovative services
+                </p>
+            </div>
+            <!-- Auth content -->
+            <div class="auth__content">
+                <div class="auth__content-inner">
+                    <!-- Logo -->
+                    <a href="./" class="logo">
+                        <img
+                            src="./assets/icons/logo.svg"
+                            alt="Fashion Shop"
+                            class="logo__img"
+                        />
+                        <h2 class="logo__title">Fashion Shop</h2>
+                    </a>
+                    <h1 class="auth__heading">Chào mừng bạn trở lại!</h1>
+                    <p class="auth__desc">
+                        Khách hàng thân thiết có thể truy cập vào thông tin đã
+                        lưu trước đây.
+                    </p>
 
-        <!-- Main -->
-        <h1>Sign in page</h1>
+                    <form action="./index.html" class="form auth__form">
+                        <div class="form__group">
+                            <div class="form__text-input">
+                                <input
+                                    type="email"
+                                    name=""
+                                    id=""
+                                    placeholder="Địa chỉ email"
+                                    class="form__input"
+                                />
+                                <img
+                                    src="./assets/icons/message.svg"
+                                    alt=""
+                                    class="form__input-icon"
+                                />
+                            </div>
+                        </div>
 
-        <!-- Footer -->
-        <footer id="footer"></footer>
+                        <div class="form__group">
+                            <div class="form__text-input">
+                                <input
+                                    type="password"
+                                    name=""
+                                    id=""
+                                    placeholder="Mật khẩu"
+                                    class="form__input"
+                                />
+                                <img
+                                    src="./assets/icons/lock.svg"
+                                    alt=""
+                                    class="form__input-icon"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form__group form__group--inline">
+                            <label class="form__checkbox">
+                                <input
+                                    type="checkbox"
+                                    name=""
+                                    class="form__checkbox-input"
+                                    hidden
+                                />
+                                <span class="form__checkbox-label"
+                                    >Ghi nhớ đăng nhập
+                                </span>
+                            </label>
+                            <a href="" class="auth__link form__pull-right">
+                                Quên mật khẩu
+                            </a>
+                        </div>
+
+                        <div class="form__group auth__btn-group">
+                            <button class="btn btn--primary auth__btn">
+                                Đăng nhập
+                            </button>
+                            <button
+                                class="btn btn--outline auth__btn btn--no-margin"
+                            >
+                                <img
+                                    src="./assets/icons/google.svg"
+                                    alt=""
+                                    class="btn__icon icon"
+                                />
+                                Đăng nhập bằng Gmail
+                            </button>
+                        </div>
+                    </form>
+
+                    <p class="auth__text">
+                        Bạn chưa có tài khoản?
+                        <a
+                            href="./sign-up.html"
+                            class="auth__link auth__link--large"
+                        >
+                            Đăng ký
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </main>
         <script>
-            load("#footer", "./templates/footer.html");
+            window.dispatchEvent(new Event("template-loaded"));
         </script>
     </body>
 </html>
