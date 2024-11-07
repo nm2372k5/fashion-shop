@@ -2541,6 +2541,19 @@ html.dark {
   left: 2px;
 }
 
+.message {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: left;
+}
+.message--success {
+  background: rgba(39, 243, 117, 0.2);
+  border: 2px solid #46a05c;
+}
+
 .home__container {
   margin-top: 40px;
 }
@@ -2664,7 +2677,7 @@ html.dark {
   bottom: 50px;
 }
 .auth__intro-img {
-  max-width: 100%;
+  width: min(424px, 100%);
 }
 .auth__intro-text {
   max-width: 412px;
@@ -2730,9 +2743,15 @@ html.dark {
     font-size: 1.4rem;
   }
 }
+.auth__message {
+  margin-top: 30px;
+}
 .auth__form {
   width: 100%;
   margin-top: 30px;
+}
+.auth__form-forgot {
+  margin-top: 0;
 }
 .auth__link {
   color: #0071dc;
