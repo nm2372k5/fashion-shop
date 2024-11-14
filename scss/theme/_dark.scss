@@ -56,6 +56,37 @@ html.dark {
     // Form
     --form-placeholder-color: #b9babe;
 
+    // Product detail
+    --product-detail-bg-color: #292e39;
+    --product-detail-info-bg-color: #171c28;
+    --product-detail-info-content-bg-color: transparent;
+
+    // Breadcrumbs
+    --breadcrumbs-bg-color: #171c28;
+    --breadcrumbs-shadow: rgba(23, 28, 40, 0.2);
+
+    // Search bar
+    --search-bar-bg-color: #171c28;
+
+    // Text content
+    --text-content-hr-bg-color: #3e4043;
+
+    // Header
+    --header-act-dropdown-bg-color: #2f3441;
+    --header-act-dropdown-shadow: rgba(23, 28, 40, 0.4);
+    --header-act-dropdown-border-color: #171c28;
+
+    // Checkout
+    --checkout-breadcrumbs-bg-color: #171c28;
+    --checkout-cart-info-bg-color: #171c28;
+    --checkout-cart-info-shadow: rgba(23, 28, 40, 0.2);
+    --checkout-border-color: #292e39;
+    --checkout-gift-shadow: rgba(23, 28, 40, 0.2);
+
+    // Dialog
+    --dialog-bg-color: #2f3441;
+    --dialog-shadow: rgba(23, 28, 40, 0.4);
+
     @include abstracts.screen(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.2);
     }

@@ -188,3 +188,55 @@ window.addEventListener("template-loaded", () => {
         };
     });
 });
+
+// Product detail
+function initializeProductImageGallery() {
+    const largeImageContainer = document.querySelector(".prod-preview__list");
+    const thumbs = document.querySelectorAll(".prod-preview__thumb");
+
+    // Kiểm tra sự tồn tại của container và thumbnails
+    if (!largeImageContainer || thumbs.length === 0) return;
+
+    thumbs.forEach((thumb, index) => {
+        thumb.addEventListener("click", function () {
+            // Xóa lớp 'prod-preview__thumb--current' trên tất cả thumbs
+            thumbs.forEach((t) =>
+                t.classList.remove("prod-preview__thumb--current")
+            );
+
+            // Thêm lớp 'prod-preview__thumb--current' vào thumb được click
+            thumb.classList.add("prod-preview__thumb--current");
+
+            // Dịch chuyển hình ảnh lớn
+            largeImageContainer.style.transform = `translateX(-${
+                index * 100
+            }%)`;
+        });
+    });
+}
+
+window.addEventListener("template-loaded", () => {
+    const tabsSelector = "prod-tab__item";
+    const contentsSelector = "prod-tab__content";
+
+    const tabActive = `${tabsSelector}--current`;
+    const contentActive = `${contentsSelector}--current`;
+
+    const tabContainers = $$(".js-tabs");
+    tabContainers.forEach((tabContainer) => {
+        const tabs = tabContainer.querySelectorAll(`.${tabsSelector}`);
+        const contents = tabContainer.querySelectorAll(`.${contentsSelector}`);
+        tabs.forEach((tab, index) => {
+            tab.onclick = () => {
+                tabContainer
+                    .querySelector(`.${tabActive}`)
+                    ?.classList.remove(tabActive);
+                tabContainer
+                    .querySelector(`.${contentActive}`)
+                    ?.classList.remove(contentActive);
+                tab.classList.add(tabActive);
+                contents[index].classList.add(contentActive);
+            };
+        });
+    });
+});

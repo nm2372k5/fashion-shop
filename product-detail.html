@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fashion Shop</title>
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/png"
+            href="./assets/favicon/favicon-48x48.png"
+            sizes="48x48"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="./assets/favicon/favicon.svg"
+        />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header-logined.html");
+        </script>
+
+        <!-- MAIN -->
+        <main class="product-page">
+            <div class="container">
+                <!-- Search bar -->
+                <div class="product-container">
+                    <div class="search-bar d-none d-md-flex">
+                        <input
+                            type="text"
+                            placeholder="Tìm kiếm sản phẩm"
+                            class="search-bar__input"
+                        />
+                        <button type="submit" class="search-bar__submit">
+                            <img
+                                src="./assets/icons/search.svg"
+                                alt=""
+                                class="search-bar__icon icon"
+                            />
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Breadcrumbs -->
+                <div class="product-container prod-info__content">
+                    <ul class="breadcrumbs">
+                        <li>
+                            <a href="#!" class="breadcrumbs__link">
+                                Sản phẩm
+                                <img
+                                    src="./assets/icons/arrow-right.svg"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="breadcrumbs__link">
+                                Áo
+                                <img
+                                    src="./assets/icons/arrow-right.svg"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="breadcrumbs__link">
+                                Áo thun
+                                <img
+                                    src="./assets/icons/arrow-right.svg"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#!"
+                                class="breadcrumbs__link breadcrumbs__link--current"
+                                >Áo thun Unisex</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Product info -->
+                <div class="product-container">
+                    <div class="row">
+                        <!-- Left -->
+                        <div class="col-5 col-xl-6 col-lg-12">
+                            <div class="prod-preview__list-wrap">
+                                <div class="prod-preview__list">
+                                    <div class="prod-preview__item">
+                                        <img
+                                            src="./assets/img/product/product_1/item-1.png"
+                                            alt=""
+                                            class="prod-preview__img"
+                                        />
+                                    </div>
+                                    <div class="prod-preview__item">
+                                        <img
+                                            src="./assets/img/product/product_1/item-2.png"
+                                            alt=""
+                                            class="prod-preview__img"
+                                        />
+                                    </div>
+                                    <div class="prod-preview__item">
+                                        <img
+                                            src="./assets/img/product/product_1/item-3.png"
+                                            alt=""
+                                            class="prod-preview__img"
+                                        />
+                                    </div>
+                                    <div class="prod-preview__item">
+                                        <img
+                                            src="./assets/img/product/product_1/item-4.png"
+                                            alt=""
+                                            class="prod-preview__img"
+                                        />
+                                    </div>
+                                    <div class="prod-preview__item">
+                                        <img
+                                            src="./assets/img/product/product_1/item-5.png"
+                                            alt=""
+                                            class="prod-preview__img"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prod-preview__thumbs">
+                                <div
+                                    class="prod-preview__thumb prod-preview__thumb--current"
+                                >
+                                    <img
+                                        src="./assets/img/product/product_1/item-1.png"
+                                        alt=""
+                                        class="prod-preview__thumb-img"
+                                    />
+                                </div>
+                                <div class="prod-preview__thumb">
+                                    <img
+                                        src="./assets/img/product/product_1/item-2.png"
+                                        alt=""
+                                        class="prod-preview__thumb-img"
+                                    />
+                                </div>
+                                <div class="prod-preview__thumb">
+                                    <img
+                                        src="./assets/img/product/product_1/item-3.png"
+                                        alt=""
+                                        class="prod-preview__thumb-img"
+                                    />
+                                </div>
+                                <div class="prod-preview__thumb">
+                                    <img
+                                        src="./assets/img/product/product_1/item-4.png"
+                                        alt=""
+                                        class="prod-preview__thumb-img"
+                                    />
+                                </div>
+                                <div class="prod-preview__thumb">
+                                    <img
+                                        src="./assets/img/product/product_1/item-5.png"
+                                        alt=""
+                                        class="prod-preview__thumb-img"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right -->
+                        <div class="col-7 col-xl-6 col-lg-12">
+                            <section class="prod-info">
+                                <h1 class="prod-info__heading">
+                                    Lovito Đầm họa tiết hoa Ditsy dễ thương cho
+                                    nữ LBA82160
+                                </h1>
+                                <div class="prod-info__row">
+                                    <div class="prod-info__brand">
+                                        <span class="prod-info__title"
+                                            >Thương hiệu:
+                                        </span>
+                                        <span class="prod-info__text"
+                                            >Fashion Shop</span
+                                        >
+                                    </div>
+                                    <span class="prod-info__line">|</span>
+                                    <div class="prod-info__type">
+                                        <span class="prod-info__title"
+                                            >Loại:
+                                        </span>
+                                        <span class="prod-info__text"
+                                            >Váy-Đầm</span
+                                        >
+                                    </div>
+                                    <span class="prod-info__line">|</span>
+                                    <div class="prod-info__code">
+                                        <span class="prod-info__title"
+                                            >MSP:
+                                        </span>
+                                        <span class="prod-info__text"
+                                            >123989</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 col-xl-12">
+                                        <!-- BE vô phần này -->
+                                        <form action="">
+                                            <!-- Colors -->
+                                            <div class="prod-prop__wrap">
+                                                <h4 class="prod-prop__title">
+                                                    Màu sắc:
+                                                </h4>
+                                                <div class="prod-prop__colors">
+                                                    <input
+                                                        type="radio"
+                                                        id="color-1"
+                                                        name="color"
+                                                        hidden
+                                                    />
+                                                    <label
+                                                        for="color-1"
+                                                        class="prod-prop__color"
+                                                        >Trắng</label
+                                                    >
+
+                                                    <input
+                                                        type="radio"
+                                                        id="color-2"
+                                                        name="color"
+                                                        hidden
+                                                    />
+                                                    <label
+                                                        for="color-2"
+                                                        class="prod-prop__color"
+                                                        >Vàng</label
+                                                    >
+
+                                                    <input
+                                                        type="radio"
+                                                        id="color-3"
+                                                        name="color"
+                                                        hidden
+                                                    />
+                                                    <label
+                                                        for="color-3"
+                                                        class="prod-prop__color"
+                                                        >Be</label
+                                                    >
+                                                </div>
+                                            </div>
+                                            <!-- Sizes -->
+                                            <div class="prod-prop__wrap">
+                                                <h4 class="prod-prop__title">
+                                                    Size:
+                                                </h4>
+                                                <div class="prod-prop__sizes">
+                                                    <div
+                                                        class="prod-prop__size"
+                                                    >
+                                                        M
+                                                    </div>
+                                                    <div
+                                                        class="prod-prop__size"
+                                                    >
+                                                        L
+                                                    </div>
+                                                    <div
+                                                        class="prod-prop__size"
+                                                    >
+                                                        XL
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Quantity -->
+                                            <div class="prod-prop__wrap">
+                                                <h4 class="prod-prop__title">
+                                                    Số lượng
+                                                </h4>
+                                                <input
+                                                    class="prod-prop__quantity"
+                                                    type="number"
+                                                    min="1"
+                                                    max="10"
+                                                    value="1"
+                                                />
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="col-6 col-xl-12">
+                                        <div class="prod-prop">
+                                            <img
+                                                src="./assets/icons/document.svg"
+                                                alt=""
+                                                class="prod-prop__icon icon"
+                                            />
+                                            <div>
+                                                <h4 class="prod-prop__title">
+                                                    Sản phẩm sẵn có
+                                                </h4>
+                                                <p class="prod-prop__desc">
+                                                    11 sản phẩm
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="prod-prop">
+                                            <img
+                                                src="./assets/icons/car.svg"
+                                                alt=""
+                                                class="prod-prop__icon icon"
+                                            />
+                                            <div>
+                                                <h4 class="prod-prop__title">
+                                                    Vận chuyển
+                                                </h4>
+                                                <p class="prod-prop__desc">
+                                                    Từ 1 đến 3 ngày
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="prod-prop">
+                                            <img
+                                                src="./assets/icons/bag.svg"
+                                                alt=""
+                                                class="prod-prop__icon icon"
+                                            />
+                                            <div>
+                                                <h4 class="prod-prop__title">
+                                                    Nhận hàng
+                                                </h4>
+                                                <p class="prod-prop__desc">
+                                                    Có tại cửa hàng, hôm nay
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="prod-info__card">
+                                            <div class="prod-info__row">
+                                                <span
+                                                    class="prod-info__price-init"
+                                                    >$500.00</span
+                                                >
+                                                <span class="prod-info__per"
+                                                    >10%</span
+                                                >
+                                            </div>
+                                            <p class="prod-info__price">
+                                                $450.000
+                                            </p>
+                                            <div class="prod-info__row">
+                                                <button
+                                                    class="btn btn--primary prod-info__add-to-cart"
+                                                >
+                                                    Thêm giỏ hàng
+                                                </button>
+                                                <button
+                                                    class="like-btn prod-info__like-btn"
+                                                >
+                                                    <img
+                                                        src="./assets/icons/heart.svg"
+                                                        alt=""
+                                                        class="like-btn__icon icon"
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/heart-red.svg"
+                                                        alt=""
+                                                        class="like-btn__icon--liked"
+                                                    />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product content -->
+                <div class="product-container">
+                    <div class="prod-tab js-tabs">
+                        <ul class="prod-tab__list">
+                            <li class="prod-tab__item prod-tab__item--current">
+                                Mô tả
+                            </li>
+                            <li class="prod-tab__item">Sản phẩm tương tự</li>
+                        </ul>
+                        <div class="prod-tab__contents">
+                            <!-- Mô tả -->
+                            <div
+                                class="prod-tab__content prod-tab__content--current"
+                            >
+                                <div class="row">
+                                    <div class="col-8 col-xl-10 col-lg-12">
+                                        <div
+                                            class="text-content prod-tab__text-content"
+                                        >
+                                            <h2>Lorem ipsum dolor sit amet.</h2>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Cum aut, facere, dolores unde
+                                                assumenda eos pariatur
+                                                praesentium quod possimus, qui
+                                                distinctio rerum error eveniet
+                                                aliquam non eum quae corporis
+                                                magni.
+                                            </p>
+                                            <h3>Lorem ipsum dolor sit amet.</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Enim quas quibusdam amet fugiat
+                                                modi blanditiis laborum, tenetur
+                                                animi id accusamus distinctio
+                                                nisi dolor rem voluptatem quis.
+                                                Vero corporis cumque itaque.
+                                            </p>
+                                            <p>
+                                                <img
+                                                    src="./assets/img/product/product_1/item-2.png"
+                                                    alt=""
+                                                />
+                                                <em
+                                                    >Lorem ipsum dolor, sit amet
+                                                    consectetur adipisicing
+                                                    elit.</em
+                                                >
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Enim quas quibusdam amet fugiat
+                                                modi blanditiis laborum, tenetur
+                                                animi id accusamus distinctio
+                                                nisi dolor rem voluptatem quis.
+                                                Vero corporis cumque itaque.
+                                            </p>
+                                            <h3>Lorem ipsum dolor sit amet.</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Enim quas quibusdam amet fugiat
+                                                modi blanditiis laborum, tenetur
+                                                animi id accusamus distinctio
+                                                nisi dolor rem voluptatem quis.
+                                                Vero corporis cumque itaque.
+                                            </p>
+                                            <blockquote>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet
+                                                    <a href="#!">consectetur</a>
+                                                    adipisicing elit. Enim quas
+                                                    quibusdam amet fugiat modi
+                                                    blanditiis laborum, tenetur
+                                                    animi id accusamus
+                                                    <a href="#!">praesentium</a>
+                                                    distinctio nisi dolor rem
+                                                    voluptatem quis. Vero
+                                                    corporis cumque itaque.
+                                                </p>
+                                            </blockquote>
+
+                                            <hr />
+
+                                            <h2>Lorem ipsum dolor sit amet.</h2>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Enim quas quibusdam amet fugiat
+                                                modi blanditiis laborum, tenetur
+                                                animi id accusamus distinctio
+                                                nisi dolor rem voluptatem quis.
+                                                Vero corporis cumque itaque.
+                                            </p>
+                                            <p>
+                                                <img
+                                                    src="./assets/img/product/product_1/item-3.png"
+                                                    alt=""
+                                                />
+                                                <em
+                                                    >Lorem ipsum dolor, sit amet
+                                                    consectetur adipisicing
+                                                    elit.</em
+                                                >
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Enim quas quibusdam amet fugiat
+                                                modi blanditiis laborum, tenetur
+                                                animi id accusamus distinctio
+                                                nisi dolor rem voluptatem quis.
+                                                Vero corporis cumque itaque.
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Enim quas quibusdam amet fugiat
+                                                modi blanditiis laborum, tenetur
+                                                animi id accusamus distinctio
+                                                nisi dolor rem voluptatem quis.
+                                                Vero corporis cumque itaque.
+                                            </p>
+
+                                            <hr />
+
+                                            <h2>Lorem ipsum dolor sit amet.</h2>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Enim quas quibusdam amet fugiat
+                                                modi blanditiis laborum, tenetur
+                                                animi id accusamus distinctio
+                                                nisi dolor rem voluptatem quis.
+                                                Vero corporis cumque itaque.
+                                            </p>
+                                            <p>
+                                                <img
+                                                    src="./assets/img/product/product_1/item-4.png"
+                                                    alt=""
+                                                />
+                                                <em
+                                                    >Lorem ipsum dolor, sit amet
+                                                    consectetur adipisicing
+                                                    elit.</em
+                                                >
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Enim quas quibusdam amet fugiat
+                                                modi blanditiis laborum, tenetur
+                                                animi id accusamus distinctio
+                                                nisi dolor rem voluptatem quis.
+                                                Vero corporis cumque itaque.
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Enim quas quibusdam amet fugiat
+                                                modi blanditiis laborum, tenetur
+                                                animi id accusamus distinctio
+                                                nisi dolor rem voluptatem quis.
+                                                Vero corporis cumque itaque.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sản phẩm tương tự -->
+                            <div class="prod-tab__content">
+                                <div class="prod-content">
+                                    <h2 class="prod-content__heading">
+                                        Gợi ý dành cho bạn
+                                    </h2>
+                                    <div
+                                        class="row row-cols-6 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 g-2"
+                                    >
+                                        <!-- Product card 1 -->
+                                        <div class="col">
+                                            <article class="product-card">
+                                                <div
+                                                    class="product-card__img-wrap"
+                                                >
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        <img
+                                                            src="./assets/img/product/item-1.png"
+                                                            alt=""
+                                                            class="product-card__thumb"
+                                                        />
+                                                    </a>
+                                                    <button
+                                                        class="like-btn like-btn--liked product-card__like-btn"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/heart.svg"
+                                                            alt=""
+                                                            class="like-btn__icon icon"
+                                                        />
+                                                        <img
+                                                            src="./assets/icons/heart-red.svg"
+                                                            alt=""
+                                                            class="like-btn__icon--liked"
+                                                        />
+                                                    </button>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        Áo Khoác Mặc 2 Mặt Chất
+                                                        Kaki Gió 2 Lớp Cao Cấp
+                                                    </a>
+                                                </h3>
+                                                <p class="product-card__brand">
+                                                    Fashion shop
+                                                </p>
+                                                <div class="product-card__row">
+                                                    <span
+                                                        class="product-card__price"
+                                                        >$47.00</span
+                                                    >
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt=""
+                                                        class="product-card__star"
+                                                    />
+                                                    <span
+                                                        class="product-card__score"
+                                                        >4.3</span
+                                                    >
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <!-- Product card 2 -->
+                                        <div class="col">
+                                            <article class="product-card">
+                                                <div
+                                                    class="product-card__img-wrap"
+                                                >
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        <img
+                                                            src="./assets/img/product/item-2.png"
+                                                            alt=""
+                                                            class="product-card__thumb"
+                                                        />
+                                                    </a>
+                                                    <button
+                                                        class="like-btn product-card__like-btn"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/heart.svg"
+                                                            alt=""
+                                                            class="like-btn__icon icon"
+                                                        />
+                                                        <img
+                                                            src="./assets/icons/heart-red.svg"
+                                                            alt=""
+                                                            class="like-btn__icon--liked"
+                                                        />
+                                                    </button>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        Đầm ngắn Lovito hoa nhí
+                                                        cho chữ a nữ L65ED128
+                                                    </a>
+                                                </h3>
+                                                <p class="product-card__brand">
+                                                    Lovito
+                                                </p>
+                                                <div class="product-card__row">
+                                                    <span
+                                                        class="product-card__price"
+                                                        >$53.00</span
+                                                    >
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt=""
+                                                        class="product-card__star"
+                                                    />
+                                                    <span
+                                                        class="product-card__score"
+                                                        >3.4</span
+                                                    >
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <!-- Product card 3 -->
+                                        <div class="col">
+                                            <article class="product-card">
+                                                <div
+                                                    class="product-card__img-wrap"
+                                                >
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        <img
+                                                            src="./assets/img/product/item-3.png"
+                                                            alt=""
+                                                            class="product-card__thumb"
+                                                        />
+                                                    </a>
+                                                    <button
+                                                        class="like-btn like-btn--liked product-card__like-btn"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/heart.svg"
+                                                            alt=""
+                                                            class="like-btn__icon icon"
+                                                        />
+                                                        <img
+                                                            src="./assets/icons/heart-red.svg"
+                                                            alt=""
+                                                            class="like-btn__icon--liked"
+                                                        />
+                                                    </button>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        Đầm Lovito họa tiết hoa
+                                                        nhí phong cách thường
+                                                        ngày dành cho nữ
+                                                        LNA59243
+                                                    </a>
+                                                </h3>
+                                                <p class="product-card__brand">
+                                                    Lovito
+                                                </p>
+                                                <div class="product-card__row">
+                                                    <span
+                                                        class="product-card__price"
+                                                        >$99.99</span
+                                                    >
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt=""
+                                                        class="product-card__star"
+                                                    />
+                                                    <span
+                                                        class="product-card__score"
+                                                        >5.0</span
+                                                    >
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <!-- Product card 4 -->
+                                        <div class="col">
+                                            <article class="product-card">
+                                                <div
+                                                    class="product-card__img-wrap"
+                                                >
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        <img
+                                                            src="./assets/img/product/item-4.png"
+                                                            alt=""
+                                                            class="product-card__thumb"
+                                                        />
+                                                    </a>
+                                                    <button
+                                                        class="like-btn like-btn--liked product-card__like-btn"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/heart.svg"
+                                                            alt=""
+                                                            class="like-btn__icon icon"
+                                                        />
+                                                        <img
+                                                            src="./assets/icons/heart-red.svg"
+                                                            alt=""
+                                                            class="like-btn__icon--liked"
+                                                        />
+                                                    </button>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        Giày Thể Thao Nữ Aruki
+                                                        Dáng Basic Phối Màu Cá
+                                                        Tính Năng Động - A11
+                                                    </a>
+                                                </h3>
+                                                <p class="product-card__brand">
+                                                    Aruki
+                                                </p>
+                                                <div class="product-card__row">
+                                                    <span
+                                                        class="product-card__price"
+                                                        >$38.65</span
+                                                    >
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt=""
+                                                        class="product-card__star"
+                                                    />
+                                                    <span
+                                                        class="product-card__score"
+                                                        >4.4</span
+                                                    >
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <!-- Product card 5 -->
+                                        <div class="col">
+                                            <article class="product-card">
+                                                <div
+                                                    class="product-card__img-wrap"
+                                                >
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        <img
+                                                            src="./assets/img/product/item-2.png"
+                                                            alt=""
+                                                            class="product-card__thumb"
+                                                        />
+                                                    </a>
+                                                    <button
+                                                        class="like-btn product-card__like-btn"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/heart.svg"
+                                                            alt=""
+                                                            class="like-btn__icon icon"
+                                                        />
+                                                        <img
+                                                            src="./assets/icons/heart-red.svg"
+                                                            alt=""
+                                                            class="like-btn__icon--liked"
+                                                        />
+                                                    </button>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        Đầm ngắn Lovito hoa nhí
+                                                        cho chữ a nữ L65ED128
+                                                    </a>
+                                                </h3>
+                                                <p class="product-card__brand">
+                                                    Lovito
+                                                </p>
+                                                <div class="product-card__row">
+                                                    <span
+                                                        class="product-card__price"
+                                                        >$53.00</span
+                                                    >
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt=""
+                                                        class="product-card__star"
+                                                    />
+                                                    <span
+                                                        class="product-card__score"
+                                                        >3.4</span
+                                                    >
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <!-- Product card 6 -->
+                                        <div class="col">
+                                            <article class="product-card">
+                                                <div
+                                                    class="product-card__img-wrap"
+                                                >
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        <img
+                                                            src="./assets/img/product/item-1.png"
+                                                            alt=""
+                                                            class="product-card__thumb"
+                                                        />
+                                                    </a>
+                                                    <button
+                                                        class="like-btn like-btn--liked product-card__like-btn"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/heart.svg"
+                                                            alt=""
+                                                            class="like-btn__icon icon"
+                                                        />
+                                                        <img
+                                                            src="./assets/icons/heart-red.svg"
+                                                            alt=""
+                                                            class="like-btn__icon--liked"
+                                                        />
+                                                    </button>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        Áo Khoác Mặc 2 Mặt Chất
+                                                        Kaki Gió 2 Lớp Cao Cấp
+                                                    </a>
+                                                </h3>
+                                                <p class="product-card__brand">
+                                                    Fashion shop
+                                                </p>
+                                                <div class="product-card__row">
+                                                    <span
+                                                        class="product-card__price"
+                                                        >$47.00</span
+                                                    >
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt=""
+                                                        class="product-card__star"
+                                                    />
+                                                    <span
+                                                        class="product-card__score"
+                                                        >4.3</span
+                                                    >
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <!-- Product card 7 -->
+                                        <div class="col">
+                                            <article class="product-card">
+                                                <div
+                                                    class="product-card__img-wrap"
+                                                >
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        <img
+                                                            src="./assets/img/product/item-4.png"
+                                                            alt=""
+                                                            class="product-card__thumb"
+                                                        />
+                                                    </a>
+                                                    <button
+                                                        class="like-btn like-btn--liked product-card__like-btn"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/heart.svg"
+                                                            alt=""
+                                                            class="like-btn__icon icon"
+                                                        />
+                                                        <img
+                                                            src="./assets/icons/heart-red.svg"
+                                                            alt=""
+                                                            class="like-btn__icon--liked"
+                                                        />
+                                                    </button>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        Giày Thể Thao Nữ Aruki
+                                                        Dáng Basic Phối Màu Cá
+                                                        Tính Năng Động - A11
+                                                    </a>
+                                                </h3>
+                                                <p class="product-card__brand">
+                                                    Aruki
+                                                </p>
+                                                <div class="product-card__row">
+                                                    <span
+                                                        class="product-card__price"
+                                                        >$38.65</span
+                                                    >
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt=""
+                                                        class="product-card__star"
+                                                    />
+                                                    <span
+                                                        class="product-card__score"
+                                                        >4.4</span
+                                                    >
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <!-- Product card 8 -->
+                                        <div class="col">
+                                            <article class="product-card">
+                                                <div
+                                                    class="product-card__img-wrap"
+                                                >
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        <img
+                                                            src="./assets/img/product/item-3.png"
+                                                            alt=""
+                                                            class="product-card__thumb"
+                                                        />
+                                                    </a>
+                                                    <button
+                                                        class="like-btn like-btn--liked product-card__like-btn"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/heart.svg"
+                                                            alt=""
+                                                            class="like-btn__icon icon"
+                                                        />
+                                                        <img
+                                                            src="./assets/icons/heart-red.svg"
+                                                            alt=""
+                                                            class="like-btn__icon--liked"
+                                                        />
+                                                    </button>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        Đầm Lovito họa tiết hoa
+                                                        nhí phong cách thường
+                                                        ngày dành cho nữ
+                                                        LNA59243
+                                                    </a>
+                                                </h3>
+                                                <p class="product-card__brand">
+                                                    Lovito
+                                                </p>
+                                                <div class="product-card__row">
+                                                    <span
+                                                        class="product-card__price"
+                                                        >$99.99</span
+                                                    >
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt=""
+                                                        class="product-card__star"
+                                                    />
+                                                    <span
+                                                        class="product-card__score"
+                                                        >5.0</span
+                                                    >
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <!-- Product card 9 -->
+                                        <div class="col">
+                                            <article class="product-card">
+                                                <div
+                                                    class="product-card__img-wrap"
+                                                >
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        <img
+                                                            src="./assets/img/product/item-4.png"
+                                                            alt=""
+                                                            class="product-card__thumb"
+                                                        />
+                                                    </a>
+                                                    <button
+                                                        class="like-btn like-btn--liked product-card__like-btn"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/heart.svg"
+                                                            alt=""
+                                                            class="like-btn__icon icon"
+                                                        />
+                                                        <img
+                                                            src="./assets/icons/heart-red.svg"
+                                                            alt=""
+                                                            class="like-btn__icon--liked"
+                                                        />
+                                                    </button>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        Giày Thể Thao Nữ Aruki
+                                                        Dáng Basic Phối Màu Cá
+                                                        Tính Năng Động - A11
+                                                    </a>
+                                                </h3>
+                                                <p class="product-card__brand">
+                                                    Aruki
+                                                </p>
+                                                <div class="product-card__row">
+                                                    <span
+                                                        class="product-card__price"
+                                                        >$38.65</span
+                                                    >
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt=""
+                                                        class="product-card__star"
+                                                    />
+                                                    <span
+                                                        class="product-card__score"
+                                                        >4.4</span
+                                                    >
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <!-- Product card 10 -->
+                                        <div class="col">
+                                            <article class="product-card">
+                                                <div
+                                                    class="product-card__img-wrap"
+                                                >
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        <img
+                                                            src="./assets/img/product/item-3.png"
+                                                            alt=""
+                                                            class="product-card__thumb"
+                                                        />
+                                                    </a>
+                                                    <button
+                                                        class="like-btn like-btn--liked product-card__like-btn"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/heart.svg"
+                                                            alt=""
+                                                            class="like-btn__icon icon"
+                                                        />
+                                                        <img
+                                                            src="./assets/icons/heart-red.svg"
+                                                            alt=""
+                                                            class="like-btn__icon--liked"
+                                                        />
+                                                    </button>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        Đầm Lovito họa tiết hoa
+                                                        nhí phong cách thường
+                                                        ngày dành cho nữ
+                                                        LNA59243
+                                                    </a>
+                                                </h3>
+                                                <p class="product-card__brand">
+                                                    Lovito
+                                                </p>
+                                                <div class="product-card__row">
+                                                    <span
+                                                        class="product-card__price"
+                                                        >$99.99</span
+                                                    >
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt=""
+                                                        class="product-card__star"
+                                                    />
+                                                    <span
+                                                        class="product-card__score"
+                                                        >5.0</span
+                                                    >
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <!-- Product card 11 -->
+                                        <div class="col">
+                                            <article class="product-card">
+                                                <div
+                                                    class="product-card__img-wrap"
+                                                >
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        <img
+                                                            src="./assets/img/product/item-1.png"
+                                                            alt=""
+                                                            class="product-card__thumb"
+                                                        />
+                                                    </a>
+                                                    <button
+                                                        class="like-btn like-btn--liked product-card__like-btn"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/heart.svg"
+                                                            alt=""
+                                                            class="like-btn__icon icon"
+                                                        />
+                                                        <img
+                                                            src="./assets/icons/heart-red.svg"
+                                                            alt=""
+                                                            class="like-btn__icon--liked"
+                                                        />
+                                                    </button>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        Áo Khoác Mặc 2 Mặt Chất
+                                                        Kaki Gió 2 Lớp Cao Cấp
+                                                    </a>
+                                                </h3>
+                                                <p class="product-card__brand">
+                                                    Fashion shop
+                                                </p>
+                                                <div class="product-card__row">
+                                                    <span
+                                                        class="product-card__price"
+                                                        >$47.00</span
+                                                    >
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt=""
+                                                        class="product-card__star"
+                                                    />
+                                                    <span
+                                                        class="product-card__score"
+                                                        >4.3</span
+                                                    >
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <!-- Product card 12 -->
+                                        <div class="col">
+                                            <article class="product-card">
+                                                <div
+                                                    class="product-card__img-wrap"
+                                                >
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        <img
+                                                            src="./assets/img/product/item-2.png"
+                                                            alt=""
+                                                            class="product-card__thumb"
+                                                        />
+                                                    </a>
+                                                    <button
+                                                        class="like-btn product-card__like-btn"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/heart.svg"
+                                                            alt=""
+                                                            class="like-btn__icon icon"
+                                                        />
+                                                        <img
+                                                            src="./assets/icons/heart-red.svg"
+                                                            alt=""
+                                                            class="like-btn__icon--liked"
+                                                        />
+                                                    </button>
+                                                </div>
+                                                <h3 class="product-card__title">
+                                                    <a
+                                                        href="./product-detail.html"
+                                                    >
+                                                        Đầm ngắn Lovito hoa nhí
+                                                        cho chữ a nữ L65ED128
+                                                    </a>
+                                                </h3>
+                                                <p class="product-card__brand">
+                                                    Lovito
+                                                </p>
+                                                <div class="product-card__row">
+                                                    <span
+                                                        class="product-card__price"
+                                                        >$53.00</span
+                                                    >
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt=""
+                                                        class="product-card__star"
+                                                    />
+                                                    <span
+                                                        class="product-card__score"
+                                                        >3.4</span
+                                                    >
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                initializeProductImageGallery();
+            });
+        </script>
+    </body>
+</html>
