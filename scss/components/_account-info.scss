@@ -1,0 +1,82 @@
+@use "../abstracts";
+
+.account {
+    &__heading {
+        display: flex;
+        align-items: center;
+
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 141.667%;
+        margin-bottom: 10px;
+
+        @include abstracts.screen(sm) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__desc {
+        display: flex;
+        align-items: center;
+        flex: 1;
+
+        font-size: 1.5rem;
+        line-height: 146.667%;
+
+        @include abstracts.screen(sm) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__text {
+        margin-top: 3px;
+    }
+}
+
+.account-block {
+    margin-top: 20px;
+}
+
+.account-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    height: 100%;
+    border-radius: 10px;
+    background: var(--account-info-bg-color);
+
+    &__info {
+        flex: 1;
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 54px;
+        height: 54px;
+        border-radius: 8px;
+        background: var(--account-info-icon-bg-color);
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 146.667%;
+    }
+
+    &__desc {
+        margin-top: 6px;
+        font-size: 1.4rem;
+        line-height: 142.857%;
+        max-width: 500px;
+    }
+}

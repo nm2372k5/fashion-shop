@@ -253,6 +253,7 @@
         cursor: pointer;
 
         &:hover {
+            background-color: rgba(255, 183, 0, 0.1);
             color: var(--text-color);
         }
     }
@@ -267,7 +268,9 @@
 }
 
 // Xu ly phan color va size
-input[type="radio"]:checked + .prod-prop__color {
+
+input[type="radio"]:checked + .prod-prop__color,
+input[type="radio"]:checked + .prod-prop__size {
     color: var(--text-color);
     border-color: #ffb700;
     border-width: 2px;

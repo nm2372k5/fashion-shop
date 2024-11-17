@@ -288,9 +288,9 @@
                         </div>
                     </div>
                 </li>
-                <!-- Trang giới thiệu -->
+                <!-- Trang mã giảm giá -->
                 <li class="navbar__item">
-                    <a href="#!" class="navbar__link"> Giới thiệu </a>
+                    <a href="./discount.html" class="navbar__link">Mã giảm giá </a>
                 </li>
                 <!-- Trang liên hệ -->
                 <li class="navbar__item">
@@ -303,96 +303,24 @@
         <!-- Action -->
         <div class="top-act">
             <div class="top-act__group d-md-none top-act__group--single">
-                <button class="top-act__btn">
-                    <img src="./assets/icons/search.svg" alt="" class="icon top-act__icon" />
-                </button>
+                <div class="top-act__btn-wrap">
+                    <button class="top-act__btn js-toggle" toggle-target="#search-bar">
+                        <img src="./assets/icons/search.svg" alt="" class="icon top-act__icon" />
+                    </button>
+                    <!-- Dropdown Search -->
+                    <div class="product-container search-bar__dropdown hide" id="search-bar">
+                        <div class="search-bar d-flex">
+                            <input type="text" placeholder="Tìm kiếm sản phẩm" class="search-bar__input" />
+                            <button type="submit" class="search-bar__submit">
+                                <img src="./assets/icons/search.svg" alt="" class="search-bar__icon icon" />
+                            </button>
+                        </div>
+                        <div class="dialog__overlay js-toggle" toggle-target="#search-bar"></div>
+                    </div>
+                </div>
             </div>
 
             <div class="top-act__group d-md-none">
-                <div class="top-act__btn-wrap">
-                    <button class="top-act__btn">
-                        <img src="./assets/icons/heart.svg" alt="" class="icon top-act__icon" />
-                        <span class="top-act__title">02</span>
-                    </button>
-                    <!-- Dropdown -->
-                    <div class="act-dropdown">
-                        <div class="act-dropdown__inner">
-                            <img src="./assets/icons/arrow-up.png" alt="" class="act-dropdown__arrow" />
-                            <div class="act-dropdown__top">
-                                <h2 class="act-dropdown__title">
-                                    Có 3 sản phẩm
-                                </h2>
-                                <a href="#!" class="act-dropdown__view-all">
-                                    Xem tất cả
-                                </a>
-                            </div>
-
-                            <div class="row row-cols-3 gx-2 act-dropdown__list">
-                                <!-- Cart preview item 1 -->
-                                <div class="col">
-                                    <article class="cart-preview-item">
-                                        <div class="cart-preview-item__img-wrap">
-                                            <img src="./assets/img/product/item-1.png" alt=""
-                                                class="cart-preview-item__thumb" />
-                                        </div>
-                                        <h3 class="cart-preview-item__title">
-                                            Áo Khoác Mặc 2 Mặt Chất Kaki Gió 2
-                                            Lớp Cao Cấp
-                                        </h3>
-                                        <p class="cart-preview-item__price">
-                                            ₫ 240.000
-                                        </p>
-                                    </article>
-                                </div>
-
-                                <!-- Cart preview item 2 -->
-                                <div class="col">
-                                    <article class="cart-preview-item">
-                                        <div class="cart-preview-item__img-wrap">
-                                            <img src="./assets/img/product/item-2.png" alt=""
-                                                class="cart-preview-item__thumb" />
-                                        </div>
-                                        <h3 class="cart-preview-item__title">
-                                            Đầm ngắn Lovito hoa nhí cho chữ a nữ
-                                            L65ED128
-                                        </h3>
-                                        <p class="cart-preview-item__price">
-                                            ₫ 190.000
-                                        </p>
-                                    </article>
-                                </div>
-
-                                <!-- Cart preview item 3 -->
-                                <div class="col">
-                                    <article class="cart-preview-item">
-                                        <div class="cart-preview-item__img-wrap">
-                                            <img src="./assets/img/product/item-3.png" alt=""
-                                                class="cart-preview-item__thumb" />
-                                        </div>
-                                        <h3 class="cart-preview-item__title">
-                                            Đầm Lovito họa tiết hoa nhí phong
-                                            cách thường ngày dành cho nữ
-                                            LNA59243
-                                        </h3>
-                                        <p class="cart-preview-item__price">
-                                            ₫ 300.000
-                                        </p>
-                                    </article>
-                                </div>
-                            </div>
-                            <div class="act-dropdown__separate"></div>
-                            <div class="act-dropdown__checkout">
-                                <a href="./checkout.html"
-                                    class="btn btn--primary btn--round act-dropdown__checkout-btn">
-                                    Kiểm tra chi tiết
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="top-act__separate"></div>
-
                 <div class="top-act__btn-wrap">
                     <button class="top-act__btn">
                         <img src="./assets/icons/buy.svg" alt="" class="icon top-act__icon" />
@@ -496,7 +424,50 @@
             </div>
 
             <div class="top-act__user">
-                <img src="./assets/img/avatar-4.jpg" alt="" class="top-act__avatar" />
+                <img src="./assets/img/avatar-2.jpg" alt="" class="top-act__avatar" />
+
+                <!-- Dropdown -->
+                <div class="act-dropdown top-act__dropdown hide">
+                    <div class="act-dropdown__inner user-menu">
+                        <img src="./assets/icons/arrow-up.png" alt=""
+                            class="act-dropdown__arrow top-act__dropdown-arrow" />
+
+                        <div class="user-menu__top">
+                            <img src="./assets/img/avatar-2.jpg" alt="" class="user-menu__avatar" />
+                            <div>
+                                <p class="user-menu__name">Nguyen Minh</p>
+                                <p class="user-menu__role">Admin</p>
+                            </div>
+                        </div>
+
+                        <ul class="user-menu__list">
+                            <li>
+                                <a href="./profile.html" class="user-menu__link">
+                                    <img src="./assets/icons/user.svg" alt="" class="icon user-menu__icon">
+                                    Trang cá nhân
+                                </a>
+                            </li>
+                            <li class="user-menu__separate">
+                                <a href="./order-history.html" class="user-menu__link">
+                                    <img src="./assets/icons/clock.svg" alt="" class="icon user-menu__icon">
+                                    Lịch sử đơn hàng
+                                </a>
+                            </li>
+                            <li class="user-menu__separate">
+                                <a href="#!" class="user-menu__link" id="switch-theme-btn">
+                                    <img src="./assets/icons/moon.svg" alt="" class="icon user-menu__icon">
+                                    <span>Chế độ tối</span>
+                                </a>
+                            </li>
+                            <li class="user-menu__separate">
+                                <a href="./index.html" class="user-menu__link">
+                                    <img src="./assets/icons/log-out.svg" alt="" class="icon user-menu__icon">
+                                    Đăng xuất
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

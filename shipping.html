@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kiểm tra chi tiết | Fashion Shop</title>
+    <title>Đặt hàng | Fashion Shop</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./assets/favicon/favicon-48x48.png" sizes="48x48" />
@@ -59,8 +59,14 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#!" class="breadcrumbs__link">
+                        <a href="./checkout.html" class="breadcrumbs__link">
                             Kiểm tra chi tiết
+                            <img src="./assets/icons/arrow-right.svg" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="breadcrumbs__link">
+                            Đặt hàng
                         </a>
                     </li>
                 </ul>
@@ -71,17 +77,76 @@
                 <div class="row gy-lg-3">
                     <div class="col-8 col-lg-12">
                         <div class="cart-info">
-                            <div class="cart-info__check-all">
-                                <label class="cart-info__checkbox">
-                                    <input type="checkbox" type="text" class="cart-info__checkbox-input" />
-                                </label>
+                            <h1 class="cart-info__heading">
+                                Đơn hàng sẽ được gửi đi sau khi bạn đặt hàng
+                            </h1>
+                            <div class="cart-info__separate"></div>
+
+                            <!-- Checkout address -->
+                            <div class="user-address">
+                                <div class="user-address__top">
+                                    <h2 class="user-address__title">
+                                        Địa chỉ nhận hàng
+                                    </h2>
+                                    <button class="user-address__btn btn btn--primary btn--round js-toggle"
+                                        toggle-target="#edit-address">
+                                        <img src="./assets/icons/edit.svg" alt="" />
+                                        Sửa địa chỉ mặc định
+                                    </button>
+                                </div>
+                                <div class="user-address__list">
+                                    <!-- Khi khách hàng chưa thêm địa chỉ mặc định -->
+                                    <!-- <p class="user-address__message">
+                                        Chưa có địa chỉ ?
+                                        <a href="" class="user-address__link js-toggle" toggle-target="#edit-address">Thêm địa chỉ mặc định</a>
+                                    </p> -->
+
+                                    <!-- Address card -->
+                                    <article class="address-card">
+                                        <div class="address-card__left">
+                                            <div class="address-card__icon">
+                                                <img class="icon" src="./assets/icons/phone.svg" alt="" />
+                                            </div>
+                                            <div class="address-card__info">
+                                                <h3 class="address-card__title">
+                                                    Nguyễn Minh (0342081044)
+                                                </h3>
+                                                <p class="address-card__desc">
+                                                    Số 1, đường Độc Lập,
+                                                    phường Quán Thánh, quận
+                                                    Ba Đình
+                                                </p>
+                                                <ul class="address-card__list">
+                                                    <li class="address-card__list-item">
+                                                        Đặt hàng
+                                                    </li>
+                                                    <li class="address-card__list-item">
+                                                        Nhận hàng
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="address-card__right">
+                                            <div class="address-card__ctrl">
+                                                <button class="address-card__ctrl-btn js-toggle"
+                                                    toggle-target="#edit-address">
+                                                    <img class="icon" src="./assets/icons/edit.svg" alt="" />
+                                                    Thay đổi
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
                             </div>
+
+                            <div class="cart-info__separate"></div>
+
+                            <h2 class="cart-info__sub-heading">
+                                Chi tiết đơn hàng
+                            </h2>
                             <div class="cart-info__list">
                                 <!-- Cart item 1 -->
                                 <article class="cart-item">
-                                    <label class="cart-info__checkbox">
-                                        <input type="checkbox" type="text" class="cart-info__checkbox-input" />
-                                    </label>
                                     <a href="./product-detail.html">
                                         <img src="./assets/img/product/item-1.png" alt="" class="cart-item__thumb" />
                                     </a>
@@ -110,7 +175,7 @@
                                                             alt="Increase" />
                                                     </button>
                                                 </div>
-                                                <!-- Them -->
+
                                                 <select name="color" id="product-color-select" class="product-prod__select" required>
                                                     <option value="" disabled selected>Chọn màu sắc</option>
                                                     <option class="product-prod-option" value="1">
@@ -154,9 +219,6 @@
 
                                 <!-- Cart item 2 -->
                                 <article class="cart-item">
-                                    <label class="cart-info__checkbox">
-                                        <input type="checkbox" type="text" class="cart-info__checkbox-input" />
-                                    </label>
                                     <a href="./product-detail.html">
                                         <img src="./assets/img/product/item-2.png" alt="" class="cart-item__thumb" />
                                     </a>
@@ -228,9 +290,6 @@
 
                                 <!-- Cart item 3 -->
                                 <article class="cart-item">
-                                    <label class="cart-info__checkbox">
-                                        <input type="checkbox" type="text" class="cart-info__checkbox-input" />
-                                    </label>
                                     <a href="./product-detail.html">
                                         <img src="./assets/img/product/item-4.png" alt="" class="cart-item__thumb" />
                                     </a>
@@ -350,9 +409,9 @@
                                 <span>Tổng:</span>
                                 <span>đ 1150.000</span>
                             </div>
-                            <a href="./shipping.html" class="cart-info__next-btn btn btn--primary btn--round">
-                                Tiếp tục thanh toán
-                            </a>
+                            <button class="cart-info__next-btn btn btn--primary btn--round js-toggle" toggle-target="#success-buy">
+                                Xác nhận đặt hàng
+                            </button>
                         </div>
                         <div class="cart-info">
                             <article class="gift-item">
@@ -386,25 +445,6 @@
         document.addEventListener("DOMContentLoaded", function () {
             initializecheckoutImageGallery();
         });
-
-        document.querySelectorAll('.cart-item__input').forEach(inputContainer => {
-            const inputField = inputContainer.querySelector('.cart-item__input-field');
-            const decreaseBtn = inputContainer.querySelector('.decrease');
-            const increaseBtn = inputContainer.querySelector('.increase');
-
-            decreaseBtn.addEventListener('click', () => {
-                const currentValue = parseInt(inputField.value);
-                if (currentValue > 1) {
-                    inputField.value = currentValue - 1;
-                }
-            });
-
-            increaseBtn.addEventListener('click', () => {
-                const currentValue = parseInt(inputField.value);
-                inputField.value = currentValue + 1;
-            });
-        });
-
     </script>
 
     <!-- Modal (dùng để xác nhận là có xóa sản phẩm hay không) -->
@@ -425,6 +465,102 @@
             </div>
         </div>
         <div class="modal__overlay js-toggle" toggle-target="#delete-confirm"></div>
+    </div>
+
+    <!-- Modal (Thêm và sửa địa chỉ) -->
+    <div id="edit-address" class="modal hide" style="--content-width: 650px">
+        <!-- <button class="modal__close">&times;</button> -->
+        <div class="modal__content">
+            <form action="" class="form">
+                <h2 class="modal__heading">Địa chỉ mặc định</h2>
+                <div class="modal__body">
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="name" class="filter__form-label filter__form-label--small">Họ và tên</label>
+                            <div class="form__text-input form__text-input--small">
+                                <input type="text" name="name" id="name" placeholder="Họ và tên" class="form__input"
+                                    minlength="2" required />
+                                <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                            </div>
+                            <p class="form__error">
+                                Tên phải có từ 2 ký tự trở lên
+                            </p>
+                        </div>
+                        <div class="form__group">
+                            <label for="phone" class="filter__form-label filter__form-label--small">Số điện
+                                thoại</label>
+                            <div class="form__text-input form__text-input--small">
+                                <input type="tel" name="phone" id="phone" placeholder="Số điện thoại"
+                                    class="form__input" minlength="10" required />
+                                <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                            </div>
+                            <p class="form__error">
+                                Số điện thoại chưa đúng
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="address" class="filter__form-label filter__form-label--small">Địa chỉ</label>
+                        <div class="form__text-area form__text-area--small">
+                            <textarea name="address" id="address" placeholder="Địa chỉ của bạn"
+                                class="form__text-area-input" required></textarea>
+                            <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                        </div>
+                        <p class="form__error">
+                            Địa chỉ không được để trống
+                        </p>
+                    </div>
+                </div>
+                <div class="modal__bottom">
+                    <button class="btn btn--small btn--outline modal__btn js-toggle" toggle-target="#edit-address">
+                        Hủy bỏ
+                    </button>
+                    <button class="btn btn--small btn--primary modal__btn btn--no-margin">
+                        Xác nhận
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="modal__overlay"></div>
+    </div>
+    <script>
+        document.querySelectorAll('.cart-item__input').forEach(inputContainer => {
+            const inputField = inputContainer.querySelector('.cart-item__input-field');
+            const decreaseBtn = inputContainer.querySelector('.decrease');
+            const increaseBtn = inputContainer.querySelector('.increase');
+
+            decreaseBtn.addEventListener('click', () => {
+                const currentValue = parseInt(inputField.value);
+                if (currentValue > 1) {
+                    inputField.value = currentValue - 1;
+                }
+            });
+
+            increaseBtn.addEventListener('click', () => {
+                const currentValue = parseInt(inputField.value);
+                inputField.value = currentValue + 1;
+            });
+        });
+    </script>
+
+    <!-- Modal (dùng để xác nhận mua hàng) -->
+    <div id="success-buy" class="modal modal--small hide">
+        <div class="modal__content">
+            <div class="modal__text">
+                Bạn đã đặt hàng thành công ✔
+            </div>
+            <div class="modal__bottom">
+                <button class="btn btn--small btn--outline modal__btn js-toggle" toggle-target="#success-buy">
+                    Thoát
+                </button>
+                <button class="btn btn--small btn--success modal__btn btn--no-margin js-toggle"
+                    toggle-target="#success-buy">
+                    Xác nhận
+                </button>
+            </div>
+        </div>
+        <div class="modal__overlay js-toggle" toggle-target="#success-buy"></div>
     </div>
 </body>
 

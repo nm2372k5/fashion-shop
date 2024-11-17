@@ -1,8 +1,27 @@
+@use "../abstracts";
+
 .search-bar {
+    position: relative;
     align-items: center;
     height: 50px;
     border-radius: 20px;
     background: var(--search-bar-bg-color);
+    z-index: 99;
+
+    &__dropdown {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 33px;
+        left: -75px;
+        transition: opacity, visibility;
+        transition-duration: 0.2s;
+
+        &.show {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 
     &__input {
         flex: 1;
@@ -12,7 +31,7 @@
         outline: none;
         border: none;
 
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         line-height: 142.857%;
 
         &::placeholder {

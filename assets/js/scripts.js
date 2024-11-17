@@ -240,3 +240,56 @@ window.addEventListener("template-loaded", () => {
         });
     });
 });
+
+// Dark | Light mode
+window.addEventListener("template-loaded", () => {
+    const switchBtn = document.querySelector("#switch-theme-btn");
+    if (switchBtn) {
+        switchBtn.onclick = function () {
+            const isDark = localStorage.dark === "true";
+            document.querySelector("html").classList.toggle("dark", !isDark);
+            localStorage.setItem("dark", !isDark);
+
+            switchBtn.querySelector("span").textContent = isDark ? "Chế độ tối" : "Chế độ sáng";
+
+            const icon = switchBtn.querySelector("img");
+            icon.src = isDark ? "./assets/icons/moon.svg" : "./assets/icons/sun.svg";
+        };
+
+        const isDark = localStorage.dark === "true";
+        switchBtn.querySelector("span").textContent = isDark ? "Chế độ sáng" : "Chế độ tối";
+
+        const icon = switchBtn.querySelector("img");
+        icon.src = isDark ? "./assets/icons/sun.svg" : "./assets/icons/moon.svg";
+    }
+});
+
+const isDark = localStorage.dark === "true";
+document.querySelector("html").classList.toggle("dark", isDark);
+
+// Thay đổi số lượng khi bấm nút
+document.querySelectorAll('.cart-item__input').forEach(input => {
+    const quantityDisplay = input.querySelector('.cart-item__quantity');
+    const decreaseBtn = input.querySelector('.decrease');
+    const increaseBtn = input.querySelector('.increase');
+
+    // Lấy giá trị hiện tại từ data-attribute
+    let quantity = parseInt(input.getAttribute('data-quantity'));
+
+    // Xử lý giảm số lượng
+    decreaseBtn.addEventListener('click', () => {
+        if (quantity > 1) {
+            quantity--;
+            input.setAttribute('data-quantity', quantity);
+            quantityDisplay.textContent = quantity;
+        }
+    });
+
+    // Xử lý tăng số lượng
+    increaseBtn.addEventListener('click', () => {
+        quantity++;
+        input.setAttribute('data-quantity', quantity);
+        quantityDisplay.textContent = quantity;
+    });
+});
+

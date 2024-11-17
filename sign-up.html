@@ -1,191 +1,126 @@
 <!DOCTYPE html>
 <html lang="en" class="">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sign up | Fashion Shop</title>
 
-        <!-- Favicon -->
-        <link
-            rel="icon"
-            type="image/png"
-            href="./assets/favicon/favicon-48x48.png"
-            sizes="48x48"
-        />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="./assets/favicon/favicon.svg"
-        />
-        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="./assets/favicon/apple-touch-icon.png"
-        />
-        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up | Fashion Shop</title>
 
-        <!-- Fonts -->
-        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet"
-        />
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
 
-        <!-- Scripts -->
-        <script src="./assets/js/scripts.js"></script>
-    </head>
-    <body>
-        <main class="auth">
-            <!-- Auth intro -->
-            <div class="auth__intro">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
+</head>
+
+<body>
+    <main class="auth">
+        <!-- Auth intro -->
+        <div class="auth__intro">
+            <!-- Logo -->
+            <a href="./" class="logo auth__intro-logo d-none d-md-flex">
+                <img src="./assets/icons/logo.svg" alt="Fashion Shop" class="logo__img" />
+                <h2 class="logo__title">Fashion Shop</h2>
+            </a>
+
+            <img src="./assets/img/auth/item-1.svg" alt="" class="auth__intro-img" />
+            <p class="auth__intro-text">
+                The best of luxury brand values, high quality products, and
+                innovative services
+            </p>
+            <button class="auth__intro-next d-none d-md-flex js-toggle" toggle-target="#auth-content">
+                <img src="./assets/img/auth/intro-arrow.svg" alt="" />
+            </button>
+        </div>
+        <!-- Auth content -->
+        <div id="auth-content" class="auth__content hide">
+            <div class="auth__content-inner">
                 <!-- Logo -->
-                <a href="./" class="logo auth__intro-logo d-none d-md-flex">
-                    <img
-                        src="./assets/icons/logo.svg"
-                        alt="Fashion Shop"
-                        class="logo__img"
-                    />
+                <a href="./" class="logo">
+                    <img src="./assets/icons/logo.svg" alt="Fashion Shop" class="logo__img" />
                     <h2 class="logo__title">Fashion Shop</h2>
                 </a>
-
-                <img
-                    src="./assets/img/auth/item-1.svg"
-                    alt=""
-                    class="auth__intro-img"
-                />
-                <p class="auth__intro-text">
-                    The best of luxury brand values, high quality products, and
-                    innovative services
+                <h1 class="auth__heading">Đăng ký tài khoản</h1>
+                <p class="auth__desc">
+                    Hãy tạo tài khoản để khám phá thời trang cao cấp và
+                    phong cách độc đáo.
                 </p>
-                <button
-                    class="auth__intro-next d-none d-md-flex js-toggle"
-                    toggle-target="#auth-content"
-                >
-                    <img src="./assets/img/auth/intro-arrow.svg" alt="" />
-                </button>
-            </div>
-            <!-- Auth content -->
-            <div id="auth-content" class="auth__content hide">
-                <div class="auth__content-inner">
-                    <!-- Logo -->
-                    <a href="./" class="logo">
-                        <img
-                            src="./assets/icons/logo.svg"
-                            alt="Fashion Shop"
-                            class="logo__img"
-                        />
-                        <h2 class="logo__title">Fashion Shop</h2>
+
+                <form action="./sign-in.html" class="form auth__form">
+                    <div class="form__group">
+                        <div class="form__text-input">
+                            <input type="email" name="" id="" placeholder="Địa chỉ email" class="form__input" required/>
+                            <img src="./assets/icons/message.svg" alt="" class="form__input-icon" />
+                            <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                        </div>
+                        <p class="form__error">Email chưa đúng định dạng</p>
+                    </div>
+
+                    <div class="form__group">
+                        <div class="form__text-input">
+                            <input type="password" name="" id="" placeholder="Mật khẩu" class="form__input" required minlength="6"/>
+                            <img src="./assets/icons/lock.svg" alt="" class="form__input-icon" />
+                            <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                        </div>
+                        <p class="form__error">Mật khẩu ít nhất 6 ký tự</p>
+                    </div>
+
+                    <div class="form__group">
+                        <div class="form__text-input">
+                            <input type="password" name="" id="" placeholder="Xác nhận mật khẩu" class="form__input" required minlength="6"/>
+                            <img src="./assets/icons/lock.svg" alt="" class="form__input-icon" />
+                            <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                        </div>
+                        <p class="form__error">Mật khẩu chưa trùng khớp</p>
+                    </div>
+
+                    <div class="form__group form__group--inline">
+                        <label class="form__checkbox">
+                            <input type="checkbox" name="" class="form__checkbox-input" hidden />
+                            <span class="form__checkbox-label">Đăng nhập ngay
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="form__group auth__btn-group">
+                        <button class="btn btn--primary auth__btn form__submit-btn">
+                            Tạo tài khoản
+                        </button>
+                        <button class="btn btn--outline auth__btn btn--no-margin">
+                            <img src="./assets/icons/google.svg" alt="" class="btn__icon icon" />
+                            Đăng nhập bằng Google
+                        </button>
+                    </div>
+                </form>
+
+                <p class="auth__text">
+                    Bạn đã có tài khoản?
+                    <a href="./sign-in.html" class="auth__link auth__link--large">
+                        Đăng nhập
                     </a>
-                    <h1 class="auth__heading">Đăng ký tài khoản</h1>
-                    <p class="auth__desc">
-                        Hãy tạo tài khoản để khám phá thời trang cao cấp và
-                        phong cách độc đáo.
-                    </p>
-
-                    <form action="./index.html" class="form auth__form">
-                        <div class="form__group">
-                            <div class="form__text-input">
-                                <input
-                                    type="email"
-                                    name=""
-                                    id=""
-                                    placeholder="Địa chỉ email"
-                                    class="form__input"
-                                />
-                                <img
-                                    src="./assets/icons/message.svg"
-                                    alt=""
-                                    class="form__input-icon"
-                                />
-                            </div>
-                        </div>
-
-                        <div class="form__group">
-                            <div class="form__text-input">
-                                <input
-                                    type="password"
-                                    name=""
-                                    id=""
-                                    placeholder="Mật khẩu"
-                                    class="form__input"
-                                />
-                                <img
-                                    src="./assets/icons/lock.svg"
-                                    alt=""
-                                    class="form__input-icon"
-                                />
-                            </div>
-                        </div>
-
-                        <div class="form__group">
-                            <div class="form__text-input">
-                                <input
-                                    type="password"
-                                    name=""
-                                    id=""
-                                    placeholder="Xác nhận mật khẩu"
-                                    class="form__input"
-                                />
-                                <img
-                                    src="./assets/icons/lock.svg"
-                                    alt=""
-                                    class="form__input-icon"
-                                />
-                            </div>
-                        </div>
-
-                        <div class="form__group form__group--inline">
-                            <label class="form__checkbox">
-                                <input
-                                    type="checkbox"
-                                    name=""
-                                    class="form__checkbox-input"
-                                    hidden
-                                />
-                                <span class="form__checkbox-label"
-                                    >Đăng nhập ngay
-                                </span>
-                            </label>
-                        </div>
-
-                        <div class="form__group auth__btn-group">
-                            <button class="btn btn--primary auth__btn">
-                                Tạo tài khoản
-                            </button>
-                            <button
-                                class="btn btn--outline auth__btn btn--no-margin"
-                            >
-                                <img
-                                    src="./assets/icons/google.svg"
-                                    alt=""
-                                    class="btn__icon icon"
-                                />
-                                Đăng nhập bằng Gmail
-                            </button>
-                        </div>
-                    </form>
-
-                    <p class="auth__text">
-                        Bạn đã có tài khoản?
-                        <a
-                            href="./sign-in.html"
-                            class="auth__link auth__link--large"
-                        >
-                            Đăng nhập
-                        </a>
-                    </p>
-                </div>
+                </p>
             </div>
-        </main>
-        <script>
-            window.dispatchEvent(new Event("template-loaded"));
-        </script>
-    </body>
+        </div>
+    </main>
+    <script>
+        window.dispatchEvent(new Event("template-loaded"));
+    </script>
+</body>
+
 </html>

@@ -425,9 +425,9 @@
                         </div>
                     </div>
                 </li>
-                <!-- Trang giới thiệu -->
+                <!-- Trang mã giảm giá -->
                 <li class="navbar__item">
-                    <a href="#!" class="navbar__link"> Giới thiệu </a>
+                    <a href="./discount.html" class="navbar__link"> Mã giảm giá </a>
                 </li>
                 <!-- Trang liên hệ -->
                 <li class="navbar__item">
@@ -439,6 +439,25 @@
 
         <!-- Action -->
         <div class="top-act">
+
+            <div class="top-act__group d-md-none top-act__group--single">
+                <div class="top-act__btn-wrap">
+                    <button class="top-act__btn js-toggle" toggle-target="#search-bar">
+                        <img src="./assets/icons/search.svg" alt="" class="icon top-act__icon" />
+                    </button>
+                    <!-- Dropdown Search -->
+                    <div class="product-container search-bar__dropdown hide" id="search-bar">
+                        <div class="search-bar d-flex">
+                            <input type="text" placeholder="Tìm kiếm sản phẩm" class="search-bar__input" />
+                            <button type="submit" class="search-bar__submit">
+                                <img src="./assets/icons/search.svg" alt="" class="search-bar__icon icon" />
+                            </button>
+                        </div>
+                        <div class="dialog__overlay js-toggle" toggle-target="#search-bar"></div>
+                    </div>
+                </div>
+            </div>
+
             <a href="./sign-in.html" class="btn btn--text d-md-none">
                 Đăng nhập
             </a>

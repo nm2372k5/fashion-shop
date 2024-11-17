@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mã giảm giá | Fashion Shop</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./templates/header-logined.html");
+    </script>
+
+    <!-- MAIN -->
+    <main class="checkout-page">
+        <div class="container">
+            <!-- Search bar -->
+            <div class="checkout-container">
+                <div class="search-bar d-none d-md-flex">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm" class="search-bar__input" />
+                    <button type="submit" class="search-bar__submit">
+                        <img src="./assets/icons/search.svg" alt="" class="search-bar__icon icon" />
+                    </button>
+                </div>
+            </div>
+
+            <!-- Breadcrumbs -->
+            <div class="checkout-container prod-info__content">
+                <ul class="breadcrumbs checkout-page__breadcrumbs">
+                    <li>
+                        <a href="./index-logined.html" class="breadcrumbs__link">
+                            Trang chủ
+                            <img src="./assets/icons/arrow-right.svg" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="breadcrumbs__link">
+                            Mã giảm giá
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Checkout -->
+            <div class="checkout-container">
+                <div class="row gy-lg-3">
+                    <div class="col-12">
+                        <div class="discount-info">
+                            <h1 class="discount-info__heading">
+                                Mã giảm giá
+                            </h1>
+                            <div class="discount-info__list">
+                                <!-- Cart item 1 -->
+                                <article class="discount-item">
+                                    <a href="./product-detail.html">
+                                        <img src="./assets/icons/logo.svg" alt="" class="discount-item__thumb" />
+                                    </a>
+                                    <div class="discount-item__content">
+                                        <div class="discount-item__content-left">
+                                            <h3 class="discount-item__title">
+                                                <a href="./product-detail.html">
+                                                    Giảm 70k cho các đơn
+                                                    hàng trên 200k
+                                                </a>
+                                            </h3>
+                                            <p class="discount-item__price-wrap">
+                                                Số lượng mã:
+                                                <span class="discount-item__status">7</span>
+                                            </p>
+                                        </div>
+                                        <div class="discount-item__content-right">
+                                            <!-- Button checkout -->
+                                            <!-- Thay đổi ở đây #add-code -->
+                                            <button
+                                                class="discount-item__checkout-btn btn btn--primary btn--round js-toggle"
+                                                toggle-target="#add-code">
+                                                Lấy mã
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Cart item 2 -->
+                                <article class="discount-item">
+                                    <a href="./product-detail.html">
+                                        <img src="./assets/icons/logo.svg" alt="" class="discount-item__thumb" />
+                                    </a>
+                                    <div class="discount-item__content">
+                                        <div class="discount-item__content-left">
+                                            <h3 class="discount-item__title">
+                                                <a href="./product-detail.html">
+                                                    Giảm 20k cho đơn hàng
+                                                    trên 50k
+                                                </a>
+                                            </h3>
+                                            <p class="discount-item__price-wrap">
+                                                Số lượng mã:
+                                                <span class="discount-item__status">12</span>
+                                            </p>
+                                        </div>
+                                        <div class="discount-item__content-right">
+                                            <!-- Button checkout -->
+                                            <button class="discount-item__checkout-btn btn btn--primary btn--round">
+                                                Lấy mã
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Cart item 3 -->
+                                <article class="discount-item">
+                                    <a href="./product-detail.html">
+                                        <img src="./assets/icons/logo.svg" alt="" class="discount-item__thumb" />
+                                    </a>
+                                    <div class="discount-item__content">
+                                        <div class="discount-item__content-left">
+                                            <h3 class="discount-item__title">
+                                                <a href="./product-detail.html">
+                                                    Giảm 40k cho tất cả đơn
+                                                    đặt hàng
+                                                </a>
+                                            </h3>
+                                            <p class="discount-item__price-wrap">
+                                                Số lượng mã:
+                                                <span class="discount-item__status">1</span>
+                                            </p>
+                                        </div>
+                                        <div class="discount-item__content-right">
+                                            <!-- Button checkout -->
+                                            <button class="discount-item__checkout-btn btn btn--primary btn--round">
+                                                Lấy mã
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Cart item 4 -->
+                                <article class="discount-item">
+                                    <a href="./product-detail.html">
+                                        <img src="./assets/icons/logo.svg" alt="" class="discount-item__thumb" />
+                                    </a>
+                                    <div class="discount-item__content">
+                                        <div class="discount-item__content-left">
+                                            <h3 class="discount-item__title">
+                                                <a href="./product-detail.html">
+                                                    Giảm 20% cho sản phẩm
+                                                    hãng fashion shop
+                                                </a>
+                                            </h3>
+                                            <p class="discount-item__price-wrap">
+                                                Số lượng mã:
+                                                <span class="discount-item__status">100</span>
+                                            </p>
+                                        </div>
+                                        <div class="discount-item__content-right">
+                                            <!-- Button checkout -->
+                                            <button class="discount-item__checkout-btn btn btn--primary btn--round">
+                                                Lấy mã
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Cart item 5 -->
+                                <article class="discount-item">
+                                    <a href="./product-detail.html">
+                                        <img src="./assets/icons/logo.svg" alt="" class="discount-item__thumb" />
+                                    </a>
+                                    <div class="discount-item__content">
+                                        <div class="discount-item__content-left">
+                                            <h3 class="discount-item__title">
+                                                <a href="./product-detail.html">
+                                                    Giảm 60k cho tất cả danh
+                                                    mục giày
+                                                </a>
+                                            </h3>
+                                            <p class="discount-item__price-wrap">
+                                                Số lượng mã:
+                                                <span class="discount-item__status">20</span>
+                                            </p>
+                                        </div>
+                                        <div class="discount-item__content-right">
+                                            <!-- Button checkout -->
+                                            <button class="discount-item__checkout-btn btn btn--primary btn--round">
+                                                Lấy mã
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer"></footer>
+    <script>
+        load("#footer", "./templates/footer.html");
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            initializecheckoutImageGallery();
+        });
+    </script>
+
+    <!-- Modal (dùng để xác nhận là đã lấy mã thành công) -->
+    <div id="add-code" class="modal modal--small hide">
+        <div class="modal__content">
+            <div class="modal__text">
+                Chúc mừng bạn đã lấy mã thành công ✔
+            </div>
+            <div class="modal__bottom">
+                <button class="btn btn--small btn--outline modal__btn js-toggle" toggle-target="#add-code">
+                    Thoát
+                </button>
+                <button class="btn btn--small btn--success modal__btn btn--no-margin js-toggle"
+                    toggle-target="#add-code">
+                    Xác nhận
+                </button>
+            </div>
+        </div>
+        <div class="modal__overlay js-toggle" toggle-target="#add-code"></div>
+    </div>
+
+    <!-- Modal (khi nhấn vào lấy mã nhưng chưa đăng nhập) -->
+    <div id="add-code-2" class="modal modal--small hide">
+        <div class="modal__content">
+            <div class="modal__text">Bạn chưa đăng nhập!</div>
+            <div class="modal__bottom">
+                <button class="btn btn--small btn--outline modal__btn js-toggle" toggle-target="#add-code-2">
+                    Thoát
+                </button>
+                <a href="./sign-in.html" class="btn btn--small btn--primary modal__btn btn--no-margin">
+                    Đăng nhập
+                </a>
+            </div>
+        </div>
+        <div class="modal__overlay js-toggle" toggle-target="#add-code-2"></div>
+    </div>
+</body>
+
+</html>

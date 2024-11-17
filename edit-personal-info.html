@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sửa thông tin | Fashion Shop</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./templates/header-logined.html");
+    </script>
+
+    <!-- MAIN -->
+    <main class="profile">
+        <div class="container">
+            <!-- Profile content -->
+            <div class="profile-container">
+                <div class="row gy-md-3">
+                    <div class="col-3 col-xl-4 col-lg-5 col-md-12 d-lg-none">
+                        <aside class="profile__sidebar">
+                            <!-- User -->
+                            <div class="profile-user">
+                                <img src="./assets/img/avatar-2.jpg" alt="" class="profile-user__avatar" />
+                                <h1 class="profile-user__name">
+                                    Nguyen Minh
+                                </h1>
+                                <p class="profile-user__desc">
+                                    nguyenminh@shop.com
+                                </p>
+                            </div>
+
+                            <!-- Menu 1 -->
+                            <div class="profile-menu">
+                                <h3 class="profile-menu__title">
+                                    Quản lý tài khoản
+                                </h3>
+                                <ul class="profile-menu__list">
+                                    <li>
+                                        <a href="#!" class="profile-menu__link">
+                                            <span class="profile-menu__icon">
+                                                <img src="./assets/icons/profile.svg" alt="" class="icon" />
+                                            </span>
+                                            Thông tin cá nhân
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="profile-menu__link">
+                                            <span class="profile-menu__icon">
+                                                <img src="./assets/icons/location.svg" alt="" class="icon" />
+                                            </span>
+                                            Địa chỉ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="profile-menu__link">
+                                            <span class="profile-menu__icon">
+                                                <img src="./assets/icons/message.svg" alt="" class="icon" />
+                                            </span>
+                                            Liên lạc & bảo mật
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Menu 2 -->
+                            <div class="profile-menu">
+                                <h3 class="profile-menu__title">
+                                    Mặt hàng của tôi
+                                </h3>
+                                <ul class="profile-menu__list">
+                                    <li>
+                                        <a href="#!" class="profile-menu__link">
+                                            <span class="profile-menu__icon">
+                                                <img src="./assets/icons/download.svg" alt="" class="icon" />
+                                            </span>
+                                            Đơn hàng đã đặt
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./favourite.html" class="profile-menu__link">
+                                            <span class="profile-menu__icon">
+                                                <img src="./assets/icons/heart.svg" alt="" class="icon" />
+                                            </span>
+                                            Danh sách yêu thích
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./shipping.html" class="profile-menu__link">
+                                            <span class="profile-menu__icon">
+                                                <img src="./assets/icons/buy.svg" alt="" class="icon" />
+                                            </span>
+                                            Giỏ hàng của tôi
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Menu 3 -->
+                            <div class="profile-menu">
+                                <h3 class="profile-menu__title">
+                                    Dịch vụ khách hàng
+                                </h3>
+                                <ul class="profile-menu__list">
+                                    <li>
+                                        <a href="#!" class="profile-menu__link">
+                                            <span class="profile-menu__icon">
+                                                <img src="./assets/icons/info.svg" alt="" class="icon" />
+                                            </span>
+                                            Trợ giúp
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="profile-menu__link">
+                                            <span class="profile-menu__icon">
+                                                <img src="./assets/icons/danger.svg" alt="" class="icon" />
+                                            </span>
+                                            Điều khoản sử dụng
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="profile-menu__link">
+                                            <span class="profile-menu__icon">
+                                                <img src="./assets/icons/log-out.svg" alt="" class="icon" />
+                                            </span>
+                                            Đăng xuất
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-9 col-xl-8 col-lg-7 col-lg-12">
+                        <div class="cart-info">
+                            <div class="row gy-3">
+                                <div class="col-12">
+                                    <h2 class="account__heading">
+                                        <a href="./profile.html">
+                                            <img src="./assets/icons/arrow-left.svg" alt="" class="icon cart-info__back-arrow">
+                                        </a>
+                                        Chỉnh sửa thông tin
+                                    </h2>
+                                    
+                                    <form class="form form-card" action="">
+                                        <!-- Form row 1 -->
+                                        <div class="form__row form__row-md-block">
+                                            <div class="form__group">
+                                                <label for="name" class="form__label form-card__label">Họ và tên</label>
+                                                <div class="form__text-input">
+                                                    <input type="text" name="name" id="name" placeholder="Họ và tên" minlength="2" class="form__input" required/>
+                                                    <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                                                </div>
+                                                <p class="form__error">Nhập ít nhất 2 ký tự</p>
+                                            </div>
+
+                                            <div class="form__group">
+                                                <label for="email" class="form__label form-card__label">Email</label>
+                                                <div class="form__text-input">
+                                                    <input type="email" name="email" id="email" placeholder="Email" class="form__input" required/>
+                                                    <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                                                </div>
+                                                <p class="form__error">Nhập email đúng định dạng</p>
+                                            </div>
+                                        </div>
+                                        <!-- Form row 2 -->
+                                        <div class="form__row form__row-md-block">
+                                            <div class="form__group">
+                                                <label for="phone" class="form__label form-card__label">Số điện thoại</label>
+                                                <div class="form__text-input">
+                                                    <input type="tel" name="phone" id="phone" placeholder="Số điện thoại" minlength="10" class="form__input" required/>
+                                                    <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                                                </div>
+                                                <p class="form__error">Nhập đúng số điện thoại</p>
+                                            </div>
+
+                                            <div class="form__group">
+                                                <label for="password" class="form__label form-card__label">Mật khẩu</label>
+                                                <div class="form__text-input">
+                                                    <input type="password" name="password" id="password" placeholder="Mật khẩu" minlength="6" class="form__input" required/>
+                                                    <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                                                </div>
+                                                <p class="form__error">Mật khẩu ít nhất 6 ký tự</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-card__bottom">
+                                            <a href="./profile.html" class="btn btn--text">Thoát</a>
+                                            <button class="btn btn--primary btn--round">Lưu thay đổi</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer"></footer>
+    <script>
+        load("#footer", "./templates/footer.html");
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            initializecheckoutImageGallery();
+        });
+    </script>
+
+    <!-- Modal (dùng để xác nhận là có xóa sản phẩm hay không) -->
+    <div id="delete-confirm" class="modal modal--small hide">
+        <!-- <button class="modal__close">&times;</button> -->
+        <div class="modal__content">
+            <div class="modal__text">
+                Bạn có chắc chắn với lựa chọn này?
+            </div>
+            <div class="modal__bottom">
+                <button class="btn btn--small btn--outline modal__btn js-toggle" toggle-target="#delete-confirm">
+                    Hủy bỏ
+                </button>
+                <button class="btn btn--small btn--primary modal__btn btn--no-margin js-toggle"
+                    toggle-target="#delete-confirm">
+                    Xác nhận
+                </button>
+            </div>
+        </div>
+        <div class="modal__overlay js-toggle" toggle-target="#delete-confirm"></div>
+    </div>
+</body>
+
+</html>

@@ -1,5 +1,4 @@
 .product {
-
     &__container {
         margin-bottom: 50px;
     }
@@ -60,6 +59,10 @@
         line-height: 150%;
     }
 
+    &__price {
+        white-space: nowrap;
+    }
+
     &__brand {
         margin: 16px 0;
         color: #9e9da8;
@@ -73,7 +76,26 @@
         margin-top: auto;
     }
 
-    &__star {
+    &__btn {
         margin: 0 6px 0 auto;
+    }
+
+    &__auto-wrap {
+        flex-wrap: wrap;
+        row-gap: 10px;
+        column-gap: 5px;
+    }
+}
+
+.product-prod {
+    &__select {
+        padding: 5px 14px;
+        border-radius: 6px;
+        border: 2px solid #d2d1d6;
+        cursor: pointer;
+        background: transparent;
+    }
+    &__option {
+        color: #1a162e;
     }
 }

@@ -87,6 +87,15 @@ html.dark {
     --dialog-bg-color: #2f3441;
     --dialog-shadow: rgba(23, 28, 40, 0.4);
 
+    // Profile
+    --profile-sidebar-bg-color: #171c28;
+    --profile-sidebar-shadow: rgba(23, 28, 40, 0.2);
+    --profile-sidebar-link-hover: #2f3441;
+
+    // Account info
+    --account-info-bg-color: #292e39;
+    --account-info-icon-bg-color: #171c28;
+
     @include abstracts.screen(lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.2);
     }

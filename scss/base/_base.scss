@@ -35,6 +35,11 @@ button {
     cursor: pointer;
 }
 
+textarea {
+    border: none;
+    outline: none;
+}
+
 a,
 button,
 input,
@@ -47,8 +52,18 @@ select {
     outline: none;
 }
 
-input {
+input,
+textarea {
     background: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+input:-webkit-autofill:hover {
+    transition: background-color 1s 9999s;
+    -webkit-text-fill-color: var(--text-color) !important;
+    caret-color: var(--text-color);
 }
 
 .icon {

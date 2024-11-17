@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yêu thích | Fashion Shop</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./templates/header-logined.html");
+    </script>
+
+    <!-- MAIN -->
+    <main class="checkout-page">
+        <div class="container">
+            <!-- Search bar -->
+            <div class="checkout-container">
+                <div class="search-bar d-none d-md-flex">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm" class="search-bar__input" />
+                    <button type="submit" class="search-bar__submit">
+                        <img src="./assets/icons/search.svg" alt="" class="search-bar__icon icon" />
+                    </button>
+                </div>
+            </div>
+
+            <!-- Breadcrumbs -->
+            <div class="checkout-container prod-info__content">
+                <ul class="breadcrumbs checkout-page__breadcrumbs">
+                    <li>
+                        <a href="./index-logined.html" class="breadcrumbs__link">
+                            Trang chủ
+                            <img src="./assets/icons/arrow-right.svg" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="breadcrumbs__link">
+                            Yêu thích
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Checkout -->
+            <div class="checkout-container">
+                <div class="row gy-lg-3">
+                    <div class="col-12">
+                        <div class="cart-info">
+                            <h1 class="cart-info__heading">
+                                Danh sách yêu thích
+                            </h1>
+                            <p class="cart-info__desc">3 sản phẩm</p>
+                            <div class="cart-info__check-all">
+                                <label class="cart-info__checkbox">
+                                    <input type="checkbox" type="text" class="cart-info__checkbox-input" />
+                                </label>
+                            </div>
+                            <div class="cart-info__list">
+                                <!-- Cart item 1 -->
+                                <article class="cart-item">
+                                    <label class="cart-info__checkbox">
+                                        <input type="checkbox" type="text" class="cart-info__checkbox-input" />
+                                    </label>
+                                    <a href="./product-detail.html">
+                                        <img src="./assets/img/product/item-1.png" alt="" class="cart-item__thumb" />
+                                    </a>
+                                    <div class="cart-item__content">
+                                        <div class="cart-item__content-left">
+                                            <h3 class="cart-item__title">
+                                                <a href="./product-detail.html">
+                                                    Áo Khoác Mặc 2 Mặt Chất
+                                                    Kaki Gió 2 Lớp Cao Cấp
+                                                </a>
+                                            </h3>
+                                            <p class="cart-item__price-wrap">
+                                                đ 240.000 |
+                                                <span class="cart-item__status">Trong kho</span>
+                                            </p>
+                                            <div class="cart-item__ctrl-wrap">
+                                                <div class="cart-item__ctrl">
+                                                    <div class="cart-item__input">
+                                                        <button class="cart-item__input-btn">
+                                                            <img class="icon" src="./assets/icons/minus.svg" alt="" />
+                                                        </button>
+                                                        <span>1</span>
+                                                        <button class="cart-item__input-btn">
+                                                            <img class="icon" src="./assets/icons/plus.svg" alt="" />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-item__ctrl">
+                                                    <button class="cart-item__ctrl-btn">
+                                                        <img class="cart-item__icon" src="./assets/icons/heart-red.svg"
+                                                            alt="" />
+                                                        Lưu
+                                                    </button>
+                                                    <button class="cart-item__ctrl-btn js-toggle"
+                                                        toggle-target="#delete-confirm">
+                                                        <img src="./assets/icons/delete.svg" alt="" />
+                                                        Xóa
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-item__content-right">
+                                            <p class="cart-item__total-price">
+                                                đ 240.000
+                                            </p>
+                                            <!-- Button checkout -->
+                                            <button class="cart-item__checkout-btn btn btn--primary btn--round">
+                                                Thêm giỏ hàng
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Cart item 2 -->
+                                <article class="cart-item">
+                                    <label class="cart-info__checkbox">
+                                        <input type="checkbox" type="text" class="cart-info__checkbox-input" />
+                                    </label>
+                                    <a href="./product-detail.html">
+                                        <img src="./assets/img/product/item-2.png" alt="" class="cart-item__thumb" />
+                                    </a>
+                                    <div class="cart-item__content">
+                                        <div class="cart-item__content-left">
+                                            <h3 class="cart-item__title">
+                                                <a href="./product-detail.html">
+                                                    Đầm ngắn Lovito hoa nhí
+                                                    cho chữ a nữ L65ED128
+                                                </a>
+                                            </h3>
+                                            <p class="cart-item__price-wrap">
+                                                đ 190.000 |
+                                                <span class="cart-item__status">Trong kho</span>
+                                            </p>
+                                            <div class="cart-item__ctrl-wrap">
+                                                <div class="cart-item__ctrl">
+                                                    <div class="cart-item__input">
+                                                        <button class="cart-item__input-btn">
+                                                            <img class="icon" src="./assets/icons/minus.svg" alt="" />
+                                                        </button>
+                                                        <span>2</span>
+                                                        <button class="cart-item__input-btn">
+                                                            <img class="icon" src="./assets/icons/plus.svg" alt="" />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-item__ctrl">
+                                                    <button class="cart-item__ctrl-btn">
+                                                        <img class="cart-item__icon" src="./assets/icons/heart-red.svg"
+                                                            alt="" />
+                                                        Lưu
+                                                    </button>
+                                                    <button class="cart-item__ctrl-btn">
+                                                        <img src="./assets/icons/delete.svg" alt="" />
+                                                        Xóa
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-item__content-right">
+                                            <p class="cart-item__total-price">
+                                                đ 380.000
+                                            </p>
+                                            <!-- Button Checkout -->
+                                            <button class="cart-item__checkout-btn btn btn--primary btn--round">
+                                                Thêm giỏ hàng
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Cart item 3 -->
+                                <article class="cart-item">
+                                    <label class="cart-info__checkbox">
+                                        <input type="checkbox" type="text" class="cart-info__checkbox-input" />
+                                    </label>
+                                    <a href="./product-detail.html">
+                                        <img src="./assets/img/product/item-4.png" alt="" class="cart-item__thumb" />
+                                    </a>
+                                    <div class="cart-item__content">
+                                        <div class="cart-item__content-left">
+                                            <h3 class="cart-item__title">
+                                                <a href="./product-detail.html">
+                                                    Giày Thể Thao Nữ Aruki
+                                                    Dáng Basic Phối Màu Cá
+                                                    Tính Năng Động - A11
+                                                </a>
+                                            </h3>
+                                            <p class="cart-item__price-wrap">
+                                                đ 500.000 |
+                                                <span class="cart-item__status">Trong kho</span>
+                                            </p>
+                                            <div class="cart-item__ctrl-wrap">
+                                                <div class="cart-item__ctrl">
+                                                    <div class="cart-item__input">
+                                                        <button class="cart-item__input-btn">
+                                                            <img class="icon" src="./assets/icons/minus.svg" alt="" />
+                                                        </button>
+                                                        <span>1</span>
+                                                        <button class="cart-item__input-btn">
+                                                            <img class="icon" src="./assets/icons/plus.svg" alt="" />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-item__ctrl">
+                                                    <button class="cart-item__ctrl-btn">
+                                                        <img class="cart-item__icon" src="./assets/icons/heart-red.svg"
+                                                            alt="" />
+                                                        Lưu
+                                                    </button>
+                                                    <button class="cart-item__ctrl-btn">
+                                                        <img src="./assets/icons/delete.svg" alt="" />
+                                                        Xóa
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-item__content-right">
+                                            <p class="cart-item__total-price">
+                                                đ 500.000
+                                            </p>
+                                            <!-- Button Checkout -->
+                                            <button class="cart-item__checkout-btn btn btn--primary btn--round">
+                                                Thêm giỏ hàng
+                                            </button>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="cart-info__bottom">
+                                <div class="cart-info__row cart-info__row--block">
+                                    <div class="cart-info__continue">
+                                        <a href="./" class="cart-info__continue-link">
+                                            <img class="cart-info__continue-icon icon"
+                                                src="./assets/icons/arrow-left-2.svg" alt="" />
+                                            Quay lại mua sắm
+                                        </a>
+                                    </div>
+                                    <button class="cart-info__checkout-all btn btn--primary btn--round">
+                                        Thêm các mục đã chọn
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer"></footer>
+    <script>
+        load("#footer", "./templates/footer.html");
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            initializecheckoutImageGallery();
+        });
+    </script>
+
+    <!-- Modal (dùng để xác nhận là có xóa sản phẩm hay không) -->
+    <div id="delete-confirm" class="modal modal--small hide">
+        <!-- <button class="modal__close">&times;</button> -->
+        <div class="modal__content">
+            <div class="modal__text">
+                Bạn có chắc chắn với lựa chọn này?
+            </div>
+            <div class="modal__bottom">
+                <button class="btn btn--small btn--outline modal__btn js-toggle" toggle-target="#delete-confirm">
+                    Hủy bỏ
+                </button>
+                <button class="btn btn--small btn--primary modal__btn btn--no-margin js-toggle"
+                    toggle-target="#delete-confirm">
+                    Xác nhận
+                </button>
+            </div>
+        </div>
+        <div class="modal__overlay js-toggle" toggle-target="#delete-confirm"></div>
+    </div>
+</body>
+
+</html>

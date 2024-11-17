@@ -22,7 +22,7 @@
     @extend %flexItemsCenter;
     position: relative;
     z-index: 1;
-    padding: 25px 0;
+    padding: 20px 0;
 
     @include abstracts.screen(lg) {
         padding: 20px 0;
@@ -291,6 +291,15 @@
         background: var(--top-act-separate);
     }
 
+    &__user {
+        position: relative;
+
+        &:hover .act-dropdown {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
     &__avatar {
         display: block;
         width: 50px;
@@ -305,6 +314,15 @@
             padding: 0 8px !important;
             font-size: 1.5rem !important;
         }
+    }
+
+    &__dropdown {
+        right: -15px !important;
+        width: min(300px, 100vw) !important;
+    }
+
+    &__dropdown-arrow {
+        right: 15px !important;
     }
 }
 
@@ -462,5 +480,54 @@
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 146.667%;
+    }
+}
+
+.user-menu {
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    &__name {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    &__role {
+        margin-top: 6px;
+        color: #0071dc;
+    }
+
+    &__list {
+        margin-top: 20px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        padding: 10px 4px;
+        border-radius: 5px;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background: var(--profile-sidebar-link-hover);
+        }
+    }
+
+    &__separate {
+        padding-top: 7px;
+        margin-top: 7px;
+        border-top: 1px solid #ccc;
     }
 }
